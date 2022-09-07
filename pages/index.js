@@ -1,10 +1,11 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Intro from '../components/intro';
 
 export default function Home() {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">Hello world! 01</h1>
-    </>
+    <main>
+      <Intro/>
+    </main>
   );
 }
