@@ -5,7 +5,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        ITCGaramondStdBold: ['ITCGaramondStd-Bd', 'sans-serif'],
+        ITCGaramondStdLight: ['ITCGaramondStd-Lt', 'sans-serif'],
+        AdobCaslonRegular: ['Adobe-Caslon-Pro-Regular', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
 }

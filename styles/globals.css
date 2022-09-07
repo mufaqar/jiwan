@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@font-face {
+    font-family: "ITCGaramondStd-Bd";
+    src: url("../public/fonts/ITCGaramondStd-Bd.ttf");
+  }
+
+  @font-face {
+    font-family: "ITCGaramondStd-Lt";
+    src: url("../public/fonts/ITCGaramondStd-Lt.ttf");
+  }
+  @font-face {
+    font-family: "Adobe-Caslon-Pro-Regular";
+    src: url("../public/fonts/Adobe-Caslon-Pro-Regular.ttf");
+  }
+  
+  
