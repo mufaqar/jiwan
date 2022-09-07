@@ -10,7 +10,8 @@ module.exports = {
         ITCGaramondStdBold: ['ITCGaramondStd-Bd', 'sans-serif'],
         ITCGaramondStdLight: ['ITCGaramondStd-Lt', 'sans-serif'],
         AdobCaslonRegular: ['Adobe-Caslon-Pro-Regular', 'sans-serif'],
-      }
+      },
+
     },
   },
   plugins: [],
