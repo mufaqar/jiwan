@@ -10,7 +10,7 @@ export default function Home() {
 
       <section className="py-12 px-3">
         <div className="container mx-auto mb-10">
-          <h3 className="text-sm">CASE STUDY 01</h3>
+          <h3 className="text-sm">CASE STUDY</h3>
         </div>
         <CaseStudy />
       </section>
