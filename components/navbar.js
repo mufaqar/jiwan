@@ -12,7 +12,7 @@ export const Navbar = () => {
 
     return (
         <>
-            <nav className='flex md:flex-row flex-wrap items-center py-5 md:px-16 px-3'>
+            <nav className='flex md:flex-row flex-wrap items-center py-8 md:px-16 px-3'>
                 <div className={`${active ? ' w-full' : 'hidden'
                     }  md:block md:order-first order-last md:w-2/12`}>
                     <div className='inline-flex md:flex-row flex-col justify-between w-full text-xs leading-5'>
