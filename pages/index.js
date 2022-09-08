@@ -2,6 +2,7 @@ import Link from 'next/link';
 import CaseStudy from '../components/case-study';
 import InsightBox from '../components/insight-box';
 import Intro from '../components/intro';
+import Partners from '../components/partners';
 import ServiceBox from '../components/service-box';
 import Team from '../components/team';
 import TeamIntro from '../components/team-intro';
@@ -56,6 +57,8 @@ export default function Home() {
       <TeamIntro />
 
       <Team />
+
+      <Partners/>
     </main>
   );
 }
