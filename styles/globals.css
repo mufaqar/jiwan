@@ -25,19 +25,19 @@ summary{
   summary::marker {
     content: "";
   }
-  summary h2::after {
+  summary figure::after {
     color: #1A4782;
     content: '\002B';
     font-size: 20px;
     position: absolute;
-    top: -8px;
-    right: 69%;
+    top: 0;
+    right: -70%;
     transform: rotate(0);
     transform-origin: .2rem 50%;
     transition: .6s transform ease;
   }
-  details[open] summary h2:after {
-    transform: rotate(125deg);
+  details[open] summary figure:after {
+    transform: rotate(135deg);
   }
   details[open] summary h2{
     font-style: italic;
