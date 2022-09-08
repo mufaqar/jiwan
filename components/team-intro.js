@@ -17,7 +17,7 @@ export default function TeamIntro() {
 
             <section className='py-10 items-center relative'>
                 <div className='flex justify-center md:px-0 px-4 '>
-                    <Image src={Company}></Image>
+                    <Image src={Company} alt=''></Image>
                 </div>
                 <div className='bg-[#6794CF] md:max-h-[107px] max-h-[81px] absolute inset-0 top-[40%] -z-30'></div>
             </section>

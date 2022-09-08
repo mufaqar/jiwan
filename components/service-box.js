@@ -9,15 +9,15 @@ export default function ServiceBox() {
         <>
             <div className="Textation">
                 <details className="border-y border-black md:border-transparent open:border-y open:border-black md:mb-14 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2" closed>
-                    <summary class="">
+                    <summary className="">
                         <div className="flex items-center">
                             <h2 className="lg:text-[65px] lg:leading-[78px] md:text-[56px] md:leading-[67px] text-[36px] leading-[43px] font-ITCGaramondStdLight tracking-tighter mr-5 open:italic">Taxation</h2>
                             <figure className="relative ">
-                                <Image src={Textation}></Image>
+                                <Image src={Textation} alt=''></Image>
                             </figure>
                         </div>
                     </summary>
-                    <div class="mt-5 md:w-1/2">
+                    <div className="mt-5 md:w-1/2">
                         <h3 className="md:text-[15px] md:leading-[20px] text-sm font-normal mb-3">PERSONAL</h3>
                         <ul className="mb-10">
                             <li className="md:text-[13px] text-xs flex justify-between border-y border-black/30 py-2">
@@ -125,15 +125,15 @@ export default function ServiceBox() {
 
             <div className="Accounting">
                 <details className="border-b border-black md:border-transparent open:border-b open:border-black md:mb-14 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2" closed>
-                    <summary class="">
+                    <summary className="">
                         <div className="flex items-center">
                             <h2 className="lg:text-[65px] lg:leading-[78px] md:text-[56px] md:leading-[67px] text-[36px] leading-[43px] font-ITCGaramondStdLight tracking-tighter mr-5 open:italic">Accounting</h2>
                             <figure className="relative ">
-                                <Image src={Accounting}></Image>
+                                <Image src={Accounting} alt=''></Image>
                             </figure>
                         </div>
                     </summary>
-                    <div class="mt-5">
+                    <div className="mt-5">
                         <div className="grid md:grid-cols-3 grid-cols-1 gap-5">
                             <div>
                                 <h3 className="md:text-[15px] md:leading-[20px] text-sm font-normal mb-3">III</h3>
@@ -299,15 +299,15 @@ export default function ServiceBox() {
 
             <div className="Assurance">
                 <details className="border-b border-black md:border-transparent open:border-b open:border-black md:mb-14 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2" closed>
-                    <summary class="">
+                    <summary className="">
                         <div className="flex items-center">
                             <h2 className="lg:text-[65px] lg:leading-[78px] md:text-[56px] md:leading-[67px] text-[36px] leading-[43px] font-ITCGaramondStdLight tracking-tighter mr-5 open:italic">Assurance</h2>
                             <figure className="relative ">
-                                <Image src={Assurance}></Image>
+                                <Image src={Assurance} alt=''></Image>
                             </figure>
                         </div>
                     </summary>
-                    <div class="mt-5 md:w-1/2">
+                    <div className="mt-5 md:w-1/2">
                         <h3 className="md:text-[15px] md:leading-[20px] text-sm font-normal mb-3 flex justify-between">AUDIT <span>From</span></h3>
                         <ul className="mb-10">
                             <li className="md:text-[13px] text-xs flex justify-between border-y border-black/30 py-2">
@@ -327,15 +327,15 @@ export default function ServiceBox() {
 
             <div className="Consulting">
                 <details className="border-b border-black md:border-transparent open:border-b open:border-black md:mb-14 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2" closed>
-                    <summary class="">
+                    <summary className="">
                         <div className="flex items-center">
                             <h2 className="lg:text-[65px] lg:leading-[78px] md:text-[56px] md:leading-[67px] text-[36px] leading-[43px] font-ITCGaramondStdLight tracking-tighter mr-5 open:italic">Consulting</h2>
                             <figure className="relative ">
-                                <Image src={Consulting}></Image>
+                                <Image src={Consulting} alt=''></Image>
                             </figure>
                         </div>
                     </summary>
-                    <div class="mt-5 ">
+                    <div className="mt-5 ">
                         <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
                             <div>
                                 <h3 className="md:text-[15px] md:leading-[20px] text-sm font-normal mb-3">STRATEGY & PLANNING</h3>
