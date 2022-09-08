@@ -11,7 +11,9 @@ module.exports = {
         ITCGaramondStdLight: ['ITCGaramondStd-Lt', 'sans-serif'],
         AdobCaslonRegular: ['Adobe-Caslon-Pro-Regular', 'sans-serif'],
       },
-
+      boxShadow: {
+        '3xl': '0 0 49px 0 rgb(0 0 0 / 16.1%)',
+      },
     },
   },
   plugins: [],

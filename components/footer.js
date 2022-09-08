@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <>
             <footer className="bg-black md:py-10 pb-0 pt-9">
-                <div className="container mx-auto items-center grid gap-16 p-3">
+                <div className="container mx-auto items-center grid gap-16 p-4">
                     <div>
                         <h2 className="lg:text-[65px] md:leading-[70px] md:text-[53px] text-4xl font-ITCGaramondStdLight tracking-tighter text-white"><span className="underline">Reach out</span> & discover what your business can buy you. </h2>
                     </div>

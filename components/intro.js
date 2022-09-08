@@ -7,7 +7,7 @@ export default function Intro() {
         <>
             <section className='py-14'>
                 <div className='container mx-auto grid md:grid-cols-2 grid-cols-1 md:gap-0 gap-9 items-center'>
-                    <div className='md:order-first order-last md:px-0 px-5'>
+                    <div className='md:order-first order-last md:px-0 px-4'>
                         <h2 className='lg:text-[64px] md:leading-[64px] md:text-[54px] text-[36px] leading-[36px] font-ITCGaramondStdLight tracking-tighter capitalize'>What does your business <br></br><span className='italic'>buy you?</span></h2>
                     </div>
                     <div>
@@ -17,7 +17,7 @@ export default function Intro() {
                         <figure className="md:hidden flex w-full h-[624px] relative">
                             <Image src={MblIntro} layout='fill'></Image>
                         </figure>
-                        <div className='text-xs max-w-[539px] ml-auto py-3 md:px-0 px-5'>
+                        <div className='text-xs max-w-[539px] ml-auto py-3 md:px-0 px-3'>
                             <p>Mah Ji preparing sugar canes for Sukhanoop Singh Dhillon.</p>
                             <p>Kanjli, Dist. Sangrur, 1989.</p>
                         </div>

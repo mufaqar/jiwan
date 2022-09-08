@@ -5,7 +5,7 @@ export default function InsightBox() {
     return (
         <>
             <div className="grid grid-cols-2 items-center">
-                <div>
+                <div className="shadow-3xl h-full flex items-center p-3">
                     <h2 className="lg:text-[31px] lg:leading-[37px] md:text-[24px] md:leading-[28px] text-lg font-ITCGaramondStdLight tracking-tighter">Lifetime Capital Gains Exemption</h2>
                 </div>
                 <div>

@@ -27,7 +27,7 @@ export default function CaseStudy() {
 
                     <div className='max-w-[900px] md:p-0 py-5 px-8'>
                         <p className='md:text-[22px] text-[18px] font-ITCGaramondStdLight tracking-tighter'>If we didn’t have proper planning in place, our farms would simply be a tax burden because of our steady incomes. Because of Jiwan Dhillon & Company’s effective planning, we have additional capital for future ventures from the tax savings and a tax free pipeline from our new corporation. </p>
-                        <p className='md:text-sm text-xs'>K. JOHAL</p>
+                        <p className='md:text-sm text-xs mt-2'>K. JOHAL</p>
                     </div>
                 </div>
             </div>
