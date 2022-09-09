@@ -7,8 +7,8 @@ import Consulting from '../public/images/consulting.png';
 export default function ServiceBox() {
   return (
     <>
-      <div className="Textation">
-        <details className="border-y border-black md:border-transparent open:border-y open:border-black md:mb-14 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
+      <div className="services Textation">
+        <details className="border-y border-black md:border-transparent open:border-y open:border-black md:mb-12 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
           <summary className="">
             <div className="flex items-center">
               <h2 className="lg:text-[65px] lg:leading-[78px] md:text-[56px] md:leading-[67px] text-[36px] leading-[43px] font-ITCGaramondStdLight tracking-tighter mr-5 open:italic">
@@ -167,8 +167,8 @@ export default function ServiceBox() {
         </details>
       </div>
 
-      <div className="Accounting">
-        <details className="border-b border-black md:border-transparent open:border-b open:border-black md:mb-14 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
+      <div className="services Accounting">
+        <details className="border-b border-black md:border-transparent open:border-b open:border-black md:mb-12 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
           <summary className="">
             <div className="flex items-center">
               <h2 className="lg:text-[65px] lg:leading-[78px] md:text-[56px] md:leading-[67px] text-[36px] leading-[43px] font-ITCGaramondStdLight tracking-tighter mr-5 open:italic">
@@ -379,8 +379,8 @@ export default function ServiceBox() {
         </details>
       </div>
 
-      <div className="Assurance">
-        <details className="border-b border-black md:border-transparent open:border-b open:border-black md:mb-14 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
+      <div className="services Assurance">
+        <details className="border-b border-black md:border-transparent open:border-b open:border-black md:mb-12 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
           <summary className="">
             <div className="flex items-center">
               <h2 className="lg:text-[65px] lg:leading-[78px] md:text-[56px] md:leading-[67px] text-[36px] leading-[43px] font-ITCGaramondStdLight tracking-tighter mr-5 open:italic">
@@ -419,7 +419,7 @@ export default function ServiceBox() {
         </details>
       </div>
 
-      <div className="Consulting">
+      <div className="services Consulting">
         <details className="border-b border-black md:border-transparent open:border-b open:border-black md:mb-14 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
           <summary className="">
             <div className="flex items-center">

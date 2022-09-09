@@ -6,8 +6,10 @@ import Partners from '../components/partners';
 import ServiceBox from '../components/service-box';
 import Team from '../components/team';
 import TeamIntro from '../components/team-intro';
+import {AiOutlinePlus} from 'react-icons/ai';
 
-export default function Home() {
+
+export default function Home({ title, icon }) {
   return (
     <main>
       <Intro />
@@ -25,15 +27,15 @@ export default function Home() {
         </div>
         <div className="container mx-auto items-center">
           <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
-            <InsightBox />
-            <InsightBox />
-            <InsightBox />
-            <InsightBox />
+            <InsightBox title="Lifetime Capital Gains Exemption" icon="/images/insightImg.png" />
+            <InsightBox title="Sale of a Business" icon="/images/insightImg.png" />
+            <InsightBox title="Corporate Reorganization" icon="/images/insightImg.png" />
+            <InsightBox title="Transferring Property to a Family Member" icon="/images/insightImg.png" />
           </div>
           <div className='flex items-center justify-center mt-10'>
-            <Link href="#">
-              <a className="md:text-[14px] text-[11px] text-[#1A4782] underline">
-                SEE MORE INSIGHTS
+            <Link href="/insights">
+              <a className="md:text-[14px] text-[11px] text-[#1A4782] underline flex space-x-7 items-center">
+                SEE MORE INSIGHTS <AiOutlinePlus />
               </a>
             </Link>
           </div>
@@ -53,12 +55,12 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
+
       <TeamIntro />
 
       <Team />
 
-      <Partners/>
+      <Partners />
     </main>
   );
 }

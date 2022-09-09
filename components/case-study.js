@@ -9,18 +9,18 @@ export default function CaseStudy() {
                         <p className='text-sm max-w-[414px]'>Four partners own three farms which began to generate profits. Each partner has a steady income, which makes the farms profit taxable at the highest marginal tax rate.</p>
                     </div>
 
-                    <div className='grid md:grid-cols-3 grid-cols-1 md:gap-8 md:p-0 py-5 px-8 md:border-y-0 border-y border-black/70'>
+                    <div className='grid md:grid-cols-3 grid-cols-1 md:gap-10 gap-6 md:p-0 py-5 px-8 md:border-y-0 border-y border-black/70'>
                         <div className='text-center'>
                             <h2 className='font-ITCGaramondStdLight md:text-[42px] md:leading-[50px] text-[34px] tracking-tighter'>53.5% to 11%</h2>
-                            <p className='md:text-[13px] text-[9px] text-[#1A4782]'>CHANGE OF TAX  RATE</p>
+                            <p className='md:text-[13px] text-[9px] text-[#1A4782] max-w-[241px] mx-auto'>CHANGE OF TAX  RATE</p>
                         </div>
                         <div className='text-center'>
-                            <h2 className='font-ITCGaramondStdLight md:text-[42px] md:leading-[50px] text-[34px] tracking-tighter'>53.5% to 11%</h2>
-                            <p className='md:text-[13px] text-[9px] text-[#1A4782]'>CHANGE OF TAX  RATE</p>
+                            <h2 className='font-ITCGaramondStdLight md:text-[42px] md:leading-[50px] text-[34px] tracking-tighter'>$212,500</h2>
+                            <p className='md:text-[13px] text-[9px] text-[#1A4782] max-w-[241px] mx-auto'>AMOUNT SAVED YEARLY THROUGH EFFECTIVE PLANNING BASED ON $500,000 REVENUE</p>
                         </div>
                         <div className='text-center'>
-                            <h2 className='font-ITCGaramondStdLight md:text-[42px] md:leading-[50px] text-[34px] tracking-tighter'>53.5% to 11%</h2>
-                            <p className='md:text-[13px] text-[9px] text-[#1A4782]'>CHANGE OF TAX  RATE</p>
+                            <h2 className='font-ITCGaramondStdLight md:text-[42px] md:leading-[50px] text-[34px] tracking-tighter'>$1,070,000</h2>
+                            <p className='md:text-[13px] text-[9px] text-[#1A4782] max-w-[241px] mx-auto'>POTENTIAL TAX SAVINGS AT SALE OF FARMS</p>
                         </div>
                     </div>
 

@@ -18,14 +18,14 @@
     src: url("../public/fonts/Adobe-Caslon-Pro-Regular.ttf");
   }
   
-summary{
+.services summary{
   position: relative;
 }
   
-  summary::marker {
+ summary::marker {
     content: "";
   }
-  summary figure::after {
+.services  summary figure::after {
     color: #1A4782;
     content: '\002B';
     font-size: 20px;
@@ -36,10 +36,10 @@ summary{
     transform-origin: .2rem 50%;
     transition: .6s transform ease;
   }
-  details[open] summary figure:after {
+.services details[open] summary figure:after {
     transform: rotate(135deg);
   }
-  details[open] summary h2{
+.services details[open] summary h2{
     font-style: italic;
   }
   

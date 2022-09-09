@@ -19,20 +19,16 @@ export const Navbar = () => {
           }  md:block md:order-first order-last md:w-2/12`}
         >
           <div className="inline-flex md:flex-row flex-col justify-between w-full text-xs leading-5">
-            <Link href="/">
+            <Link href="/case-studies">
               <a className="">CASE STUDIES</a>
             </Link>
-            <Link href="/">
-              <a className=" ">INSIGHTS</a>
+            <Link href="/insights">
+              <a className="">INSIGHTS</a>
             </Link>
           </div>
         </div>
-        <Link href="/">
-          <a className="md:w-8/12 flex md:justify-center">
-            <Image src={Logo} className="" alt=""></Image>
-          </a>
-        </Link>
-        <button className="md:hidden ml-auto" onClick={handleClick}>
+
+        <button className="md:hidden mr-auto" onClick={handleClick}>
           <svg
             className="w-8 h-10"
             fill="none"
@@ -48,6 +44,14 @@ export const Navbar = () => {
             />
           </svg>
         </button>
+        <div className='w-8/12 mr-auto'>
+        <Link href="/">
+          <a className="flex mx-auto md:w-[367px] w-[203px]">
+            <Image src={Logo} className="" alt=""></Image>
+          </a>
+        </Link>
+        </div>
+        
         {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
         <div
           className={`${
