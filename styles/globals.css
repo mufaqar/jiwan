@@ -1,3 +1,7 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,41 +9,79 @@
 
 
 @font-face {
-    font-family: "ITCGaramondStd-Bd";
-    src: url("../public/fonts/ITCGaramondStd-Bd.ttf");
-  }
+  font-family: "ITCGaramondStd-Bd";
+  src: url("../public/fonts/ITCGaramondStd-Bd.ttf");
+}
 
-  @font-face {
-    font-family: "ITCGaramondStd-Lt";
-    src: url("../public/fonts/ITCGaramondStd-Lt.ttf");
-  }
-  @font-face {
-    font-family: "Adobe-Caslon-Pro-Regular";
-    src: url("../public/fonts/Adobe-Caslon-Pro-Regular.ttf");
-  }
-  
-.services summary{
+@font-face {
+  font-family: "ITCGaramondStd-Lt";
+  src: url("../public/fonts/ITCGaramondStd-Lt.ttf");
+}
+
+@font-face {
+  font-family: "Adobe-Caslon-Pro-Regular";
+  src: url("../public/fonts/Adobe-Caslon-Pro-Regular.ttf");
+}
+
+.services summary {
   position: relative;
 }
-  
- summary::marker {
-    content: "";
-  }
-.services  summary figure::after {
-    color: #1A4782;
-    content: '\002B';
-    font-size: 20px;
-    position: absolute;
-    top: 0;
-    right: -70%;
-    transform: rotate(0);
-    transform-origin: .2rem 50%;
-    transition: .6s transform ease;
-  }
+
+summary::marker {
+  content: "";
+}
+
+.services summary figure::after {
+  color: #1A4782;
+  content: '\002B';
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  right: -70%;
+  transform: rotate(0);
+  transform-origin: .2rem 50%;
+  transition: .6s transform ease;
+}
+
 .services details[open] summary figure:after {
-    transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.services details[open] summary h2 {
+  font-style: italic;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #1A4782;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  color: #1A4782;
+}
+
+.slick-dots {
+  bottom: -70px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+@media screen and (max-width: 767px) {
+
+  .slick-prev:before,
+  .slick-next:before {
+    display: none;
   }
-.services details[open] summary h2{
-    font-style: italic;
+
+  .slick-next {
+    right: 0;
   }
-  
+}
