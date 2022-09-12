@@ -308,23 +308,19 @@ export default function ServiceBox() {
                 <ul className="mb-10">
                   <li className="md:text-[13px] text-xs flex justify-between border-y border-black/30 py-2">
                     <span>Trust returns</span>
-                    <span>From</span>
-                    <span>$1,000</span>
+                    <span className='w-1/4 flex justify-between'><span>From</span><span>$1,000</span></span>
                   </li>
                   <li className="md:text-[13px] text-xs flex justify-between border-b border-black/30 py-2">
                     <span>Amalgamations and Wind Ups</span>
-                    <span>From</span>
-                    <span>$6,000</span>
+                    <span className='w-1/4 flex justify-between'><span>From</span><span>$6,000</span></span>
                   </li>
                   <li className="md:text-[13px] text-xs flex justify-between border-b border-black/30 py-2">
-                    <span>Corporate Reorganizations</span>
-                    <span>From</span>
-                    <span>$6,000</span>
+                    <span>Corporate Reorganizations</span>                    
+                    <span className='w-1/4 flex justify-between'><span>From</span><span>$6,000</span></span>
                   </li>
                   <li className="md:text-[13px] text-xs flex justify-between border-b border-black/30 py-2">
-                    <span>Asset transfers</span>
-                    <span>From</span>
-                    <span>$6,000</span>
+                    <span>Asset transfers</span>                    
+                    <span className='w-1/4 flex justify-between'><span>From</span><span>$6,000</span></span>
                   </li>
                   <li className="md:text-[13px] text-xs flex justify-between border-b border-black/30 py-2">
                     <span>Tax Planning and Compliance</span>
@@ -440,23 +436,19 @@ export default function ServiceBox() {
                 <ul className="mb-5">
                   <li className="md:text-[13px] text-xs flex justify-between border-y border-black/30 py-2">
                     <span>Strategic and Operational Plans</span>
-                    <span>From</span>
-                    <span>$5,000</span>
+                    <span className='w-1/4 flex justify-between'><span>From</span><span>$5,000</span></span>                    
                   </li>
                   <li className="md:text-[13px] text-xs flex justify-between border-b border-black/30 py-2">
                     <span>Business plans</span>
-                    <span>From</span>
-                    <span>$2,500</span>
+                    <span className='w-1/4 flex justify-between'><span>From</span><span>$2,500</span></span>                    
                   </li>
                   <li className="md:text-[13px] text-xs flex justify-between border-b border-black/30 py-2">
                     <span>Busines valuations</span>
-                    <span>From</span>
-                    <span>$2,500</span>
+                    <span className='w-1/4 flex justify-between'><span>From</span><span>$2,500</span></span>                    
                   </li>
                   <li className="md:text-[13px] text-xs flex justify-between border-b border-black/30 py-2">
                     <span>Financial projections</span>
-                    <span>From</span>
-                    <span>$2,500</span>
+                    <span className='w-1/4 flex justify-between'><span>From</span><span>$2,500</span></span>                    
                   </li>
                   <li className="md:text-[13px] text-xs flex justify-between border-b border-black/30 py-2">
                     <span>Purchase and Sale of a Business</span>

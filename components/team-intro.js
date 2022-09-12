@@ -5,7 +5,7 @@ export default function TeamIntro() {
     return (
         <>
 
-            <section className="py-10 px-4">
+            <section id='team' className="py-10 px-4">
                 <div className="container mx-auto mb-10">
                     <h3 className="text-sm ">OUR TEAM</h3>
                 </div>

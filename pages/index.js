@@ -14,7 +14,7 @@ export default function Home({ title, icon }) {
     <main>
       <Intro />
 
-      <section className="py-10 px-4">
+      <section className="py-10 px-4 min-h-screen">
         <div className="container mx-auto mb-10">
           <h3 className="text-sm">CASE STUDY</h3>
         </div>
@@ -42,7 +42,7 @@ export default function Home({ title, icon }) {
         </div>
       </section>
 
-      <section className="py-10 md:px-4 px-0">
+      <section id='services' className="py-10 md:px-4 px-0">
         <div className="container mx-auto ">
           <h3 className="text-sm mb-5 md:px-0 px-4">SERVICES</h3>
           <div className='grid md:grid-cols-4 grid-cols-1 md:gap-10'>

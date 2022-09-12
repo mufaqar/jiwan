@@ -1,73 +1,91 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import Logo from '../public/images/logo.png';
+import WhiteLogo from '../public/images/whiteLogo.png';
 
-export const Navbar = () => {
-  const [active, setActive] = useState(false);
+function NavLink({ to, children }) {
+  return <a href={to} className={`mx-4`}>
+    {children}
+  </a>
+}
 
-  const handleClick = () => {
-    setActive(!active);
-  };
-
+function MobileNav({ open, setOpen }) {
   return (
-    <>
-      <nav className="flex md:flex-row flex-wrap items-center py-8 md:px-16 px-3">
-        <div
-          className={`${
-            active ? ' w-full' : 'hidden'
-          }  md:block md:order-first order-last md:w-2/12`}
-        >
-          <div className="inline-flex md:flex-row flex-col justify-between w-full text-xs leading-5">
-            <Link href="/case-studies">
-              <a className="">CASE STUDIES</a>
-            </Link>
-            <Link href="/insights">
-              <a className="">INSIGHTS</a>
-            </Link>
-          </div>
+    <div className={`absolute top-0 left-0 h-screen w-screen z-50 bg-black transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out  `}>
+      <div className="flex items-center justify-center mx-auto bg-black h-24"> {/*logo container*/}
+        <Link href="/">
+          <a className="text-xl font-semibold flex justify-center items-center">
+            <Image src={WhiteLogo} alt=''></Image>
+          </a></Link>
+      </div>
+      <div className="flex flex-col gap-10 text-white text-[15px] mt-16">
+        <NavLink to="/case-studies">
+          CASE STUDIES
+        </NavLink>
+        <NavLink to="/insights">
+          INSIGHTS
+        </NavLink>
+        <NavLink to="/#services">
+          SERVICES
+        </NavLink>
+        <NavLink to="/#team">
+          TEAM
+        </NavLink>
+      </div>
+    </div>
+  )
+}
+
+export default function Navbar() {
+
+  const [open, setOpen] = useState(false)
+  return (<>
+    <Head>
+      <title>Jiwan - Dhillon</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
+
+    <nav className="flex  bg-white md:px-16 px-8 py-8 h-[100px] items-center">
+      <MobileNav open={open} setOpen={setOpen} />
+
+      <div className="w-full flex justify-between items-center">
+
+        <div className="hidden md:flex justify-between w-3/12 text-xs">
+          <NavLink to="/case-studies">
+            CASE STUDIES
+          </NavLink>
+          <NavLink to="/insights">
+            INSIGHTS
+          </NavLink>
         </div>
 
-        <button className="md:hidden mr-auto" onClick={handleClick}>
-          <svg
-            className="w-8 h-10"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-        </button>
-        <div className='w-8/12 mr-auto'>
-        <Link href="/">
-          <a className="flex mx-auto md:w-[367px] w-[203px]">
-            <Image src={Logo} className="" alt=""></Image>
-          </a>
-        </Link>
+        <div className="z-50 flex relative w-8 h-6 flex-col justify-between items-center md:hidden" onClick={() => {
+          setOpen(!open)
+        }}>
+          {/* hamburger button */}
+          <span className={`h-[3px] w-full bg-black rounded-lg transform transition duration-300 ease-in-out ${open ? "rotate-45 translate-y-2.5 bg-white" : ""}`} />
+          <span className={`h-[3px] w-full bg-black rounded-lg transform transition duration-300 ease-in-out ${open ? "-rotate-45 -translate-y-2.5 bg-white" : ""}`} />
         </div>
-        
-        {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
-        <div
-          className={`${
-            active ? ' w-full' : 'hidden'
-          }  md:block md:text-end order-last md:w-2/12`}
-        >
-          <div className="inline-flex md:flex-row flex-col justify-between w-full text-xs leading-5">
-            <Link href="/">
-              <a className=" ">SERVICES</a>
-            </Link>
-            <Link href="/">
-              <a className=" ">TEAM</a>
-            </Link>
-          </div>
+
+        <div className="md:w-6/12 w-8/12 mx-auto flex items-center justify-center">
+          <Link href="/">
+            <a className="text-2xl font-semibold"><Image src={Logo} alt=''></Image></a>
+          </Link>
         </div>
-      </nav>
-    </>
-  );
-};
+
+        <div className="hidden md:flex justify-between w-3/12 text-xs">
+          <NavLink to="/#services">
+            SERVICES
+          </NavLink>
+          <NavLink to="/#team">
+            TEAM
+          </NavLink>
+        </div>
+      </div>
+    </nav>
+  </>
+
+  )
+}
