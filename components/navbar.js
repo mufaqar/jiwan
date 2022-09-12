@@ -41,6 +41,7 @@ function MobileNav({ open, setOpen }) {
 export default function Navbar() {
 
   const [open, setOpen] = useState(false)
+  
   return (<>
     <Head>
       <title>Jiwan - Dhillon</title>

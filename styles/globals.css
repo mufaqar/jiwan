@@ -71,8 +71,25 @@ summary::marker {
 
 .slick-prev:before,
 .slick-next:before {
-  color: black;
+  color: rgba(0, 0, 0, 0);
 }
+.slick-next:before{
+  -webkit-appearance: button;
+  background-color: transparent;
+  background-image: url('../public/images/arrowR.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.slick-prev:before{
+  -webkit-appearance: button;
+  background-color: transparent;
+  background-image: url('../public/images/arrowL.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 
 @media screen and (max-width: 767px) {
 
