@@ -26,7 +26,7 @@ export default function Navbar() {
 
       {/* mobile Menu Starts */}
 
-      <div className={`absolute top-0 left-0 h-screen w-screen z-50 bg-black transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out  `}>
+      <div className={`md:hidden absolute top-0 left-0 h-screen w-screen z-50 bg-black transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out  `}>
         <div className="flex items-center justify-center mx-auto bg-black h-24" onClick={() => setOpen(false)}> {/*logo container*/}
           <Link href="/">
             <a className="text-xl font-semibold flex justify-center items-center">
