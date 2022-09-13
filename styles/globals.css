@@ -69,6 +69,13 @@ summary::marker {
   bottom: -70px;
 }
 
+.slick-prev {
+  left: -70px;
+}
+.slick-next {
+  right: -70px;
+}
+
 .slick-prev:before,
 .slick-next:before {
   color: rgba(0, 0, 0, 0);
