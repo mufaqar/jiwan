@@ -65,8 +65,8 @@ export default function SingleArticle({ project }) {
                         <p className="font-ITCGaramondStdLight tracking-tighter md:text-[25px] md:leading-[28px] text-[22px] leading-[25px]">{project?.excerpt}</p>
                     </div>
                     <figure className="md:max-w-[976px] w-full mx-auto mb-14">
-                        <OwnImage path={project.banner_image?.asset.url} alt={project?.title} className="mx-auto"></OwnImage>
-                        <figcaption className="px-4 text-xs md:px-0">{project.banner_image?.caption}</figcaption>
+                        <OwnImage path={project?.banner_image?.asset.url} alt={project?.title} className="mx-auto"></OwnImage>
+                        <figcaption className="px-4 text-xs md:px-0">{project?.banner_image?.caption}</figcaption>
                     </figure>
 
                     <div className="md:max-w-[815px] mx-auto md:px-0 px-4">
@@ -79,10 +79,10 @@ export default function SingleArticle({ project }) {
                                     </summary>
                                     <div className="mt-2">
                                         <ul className="flex space-x-2">
-                                            <li className="px-2 py-2 text-white bg-black"><a href={`https://www.facebook.com/sharer/sharer.php?u=https://${domainName}/insights/${project.slug.current}`} target="_blank" rel="noreferrer"><FaFacebookF /></a></li>
-                                            <li className="px-2 py-2 text-white bg-black"><a href={`https://twitter.com/intent/tweet?url=https://${domainName}/insights/${project.slug.current}/&text=`} target="_blank" rel="noreferrer"><FaTwitter /></a></li>
-                                            <li className="px-2 py-2 text-white bg-black"><a href={`https://www.linkedin.com/shareArticle?mini=true&url=https://${domainName}/insights/${project.slug.current}`} target="_blank" rel="noreferrer"><FaLinkedinIn /></a></li>
-                                            <li className="px-2 py-2 text-white bg-black"><a href={`mailto:info@example.com?&subject=&cc=&bcc=&body=https://${domainName}/insights/${project.slug.current}/%0A`} target="_blank" rel="noreferrer"><FaEnvelope /></a></li>
+                                            <li className="px-2 py-2 text-white bg-black"><a href={`https://www.facebook.com/sharer/sharer.php?u=https://${domainName}/insights/${project?.slug.current}`} target="_blank" rel="noreferrer"><FaFacebookF /></a></li>
+                                            <li className="px-2 py-2 text-white bg-black"><a href={`https://twitter.com/intent/tweet?url=https://${domainName}/insights/${project?.slug.current}/&text=`} target="_blank" rel="noreferrer"><FaTwitter /></a></li>
+                                            <li className="px-2 py-2 text-white bg-black"><a href={`https://www.linkedin.com/shareArticle?mini=true&url=https://${domainName}/insights/${project?.slug.current}`} target="_blank" rel="noreferrer"><FaLinkedinIn /></a></li>
+                                            <li className="px-2 py-2 text-white bg-black"><a href={`mailto:info@example.com?&subject=&cc=&bcc=&body=https://${domainName}/insights/${project?.slug.current}/%0A`} target="_blank" rel="noreferrer"><FaEnvelope /></a></li>
                                             <li className="px-2 py-2 text-white bg-black" ><div><FaLink /></div></li>
                                         </ul>
                                     </div>
@@ -91,12 +91,12 @@ export default function SingleArticle({ project }) {
                         </div>
                         
                         <div className="pt-10 mt-4 text-xl border-t border-black _content ">
-                            <PortableText
+                            { project?.content &&  <PortableText
                                 content={project.content}
                                 serializers={{
                                     p: ({ children }) => <p className="">{children}</p>
-                                }}
-                            />
+                                }}   
+                            /> }
                         </div>
                     </div>
                 </div>
