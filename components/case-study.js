@@ -16,7 +16,7 @@ export default class SimpleSlider extends Component {
             slidesToShow: 1,
             slidesToScroll: 1
         };
-        console.log('...', this.props.casestudy);
+        
         return (
 
             <div className="container mx-auto">

@@ -31,8 +31,41 @@ const caseStudy = `*[_type == "casestudy"]{
   description,
   name
 }`;
+const fetchTeam = `*[_type == "team"]{
+  _id,
+  name,
+  position,
+  profile_image
+}`;
+const TaxationQuery = `*[_type == "services_taxation"]{
+  type,
+  name,
+  price
+}`;
+const accountingQuery = `*[_type == "services_accounting"]{
+  type,
+  name,
+  price,
+  from
+}`;
+const assuranceQuery = `*[_type == "services_assurance"]{
+  type,
+  name,
+  price,
+  from
+}`;
+const consultingQuery = `*[_type == "services_consulting"]{
+  type,
+  name,
+  price,
+  from
+}`;
 
-export default function Home({ insight, casestudy }) {
+
+
+
+
+export default function Home({ insight, casestudy, team, taxation, accounting, assurance, consulting }) {
   
   return (
     <main>
@@ -53,7 +86,7 @@ export default function Home({ insight, casestudy }) {
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
             {
               insight.slice(0,4).map((item, index)=> (
-                <InsightBox index={index} insight={item} />
+                <InsightBox key={index} insight={item} />
               ))
             }
             
@@ -77,7 +110,7 @@ export default function Home({ insight, casestudy }) {
               <p className='text-sm max-w-[183px]'>We work with a limited number of personal and corporate clients. Here’s how:</p>
             </div>
             <div className='col-span-3'>
-              <ServiceBox />
+              <ServiceBox taxation={taxation} accounting={accounting} assurance={assurance} consulting={consulting}/>
             </div>
           </div>
         </div>
@@ -85,7 +118,7 @@ export default function Home({ insight, casestudy }) {
 
       <TeamIntro />
 
-      <Team />
+      <Team team={team}/>
 
       <Partners />
     </main>
@@ -97,11 +130,21 @@ export default function Home({ insight, casestudy }) {
 export async function getStaticProps() {
   const insight = await sanityClient.fetch(FetchInsight);
   const casestudy = await sanityClient.fetch(caseStudy);
+  const team = await sanityClient.fetch(fetchTeam);
+  const taxation = await sanityClient.fetch(TaxationQuery);
+  const accounting = await sanityClient.fetch(accountingQuery);
+  const assurance = await sanityClient.fetch(assuranceQuery);
+  const consulting = await sanityClient.fetch(consultingQuery);
 
   return {
     props: {
       insight,
-      casestudy
+      casestudy,
+      team,
+      taxation,
+      accounting,
+      assurance,
+      consulting
     }
   };
 }

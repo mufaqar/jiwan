@@ -66,7 +66,7 @@ export default function SingleArticle({ project }) {
                     </div>
                     <figure className="md:max-w-[976px] w-full mx-auto mb-14">
                         <OwnImage path={project.banner_image?.asset.url} alt={project?.title} className="mx-auto"></OwnImage>
-                        <figcaption className="px-4 text-xs md:px-0">{project?.banner_image.caption}</figcaption>
+                        <figcaption className="px-4 text-xs md:px-0">{project.banner_image?.caption}</figcaption>
                     </figure>
 
                     <div className="md:max-w-[815px] mx-auto md:px-0 px-4">
@@ -79,10 +79,10 @@ export default function SingleArticle({ project }) {
                                     </summary>
                                     <div className="mt-2">
                                         <ul className="flex space-x-2">
-                                            <li className="px-2 py-2 text-white bg-black"><a href={`https://www.facebook.com/sharer/sharer.php?u=https://${domainName}/insights/${project.slug.current}`} target="_blank"><FaFacebookF /></a></li>
-                                            <li className="px-2 py-2 text-white bg-black"><a href={`https://twitter.com/intent/tweet?url=https://${domainName}/insights/${project.slug.current}/&text=`} target="_blank"><FaTwitter /></a></li>
-                                            <li className="px-2 py-2 text-white bg-black"><a href={`https://www.linkedin.com/shareArticle?mini=true&url=https://${domainName}/insights/${project.slug.current}`} target="_blank"><FaLinkedinIn /></a></li>
-                                            <li className="px-2 py-2 text-white bg-black"><a href={`mailto:info@example.com?&subject=&cc=&bcc=&body=https://${domainName}/insights/${project.slug.current}/%0A`} target="_blank"><FaEnvelope /></a></li>
+                                            <li className="px-2 py-2 text-white bg-black"><a href={`https://www.facebook.com/sharer/sharer.php?u=https://${domainName}/insights/${project.slug.current}`} target="_blank" rel="noreferrer"><FaFacebookF /></a></li>
+                                            <li className="px-2 py-2 text-white bg-black"><a href={`https://twitter.com/intent/tweet?url=https://${domainName}/insights/${project.slug.current}/&text=`} target="_blank" rel="noreferrer"><FaTwitter /></a></li>
+                                            <li className="px-2 py-2 text-white bg-black"><a href={`https://www.linkedin.com/shareArticle?mini=true&url=https://${domainName}/insights/${project.slug.current}`} target="_blank" rel="noreferrer"><FaLinkedinIn /></a></li>
+                                            <li className="px-2 py-2 text-white bg-black"><a href={`mailto:info@example.com?&subject=&cc=&bcc=&body=https://${domainName}/insights/${project.slug.current}/%0A`} target="_blank" rel="noreferrer"><FaEnvelope /></a></li>
                                             <li className="px-2 py-2 text-white bg-black" ><div><FaLink /></div></li>
                                         </ul>
                                     </div>
@@ -108,7 +108,7 @@ export default function SingleArticle({ project }) {
                         <h2 className="font-ITCGaramondStdLight tracking-tighter md:text-[36px] leading-[21px] text-[31px] border-b border-black pb-4 mb-3">READ MORE</h2>
                         <div>
                             {
-                                project?.related_project.slice(0, 3).map((item, index) => (
+                                project?.related_project?.slice(0, 3).map((item, index) => (
                                     <RelatedBlog title={item.title} excerpt={item.excerpt} link={item.slug.current} imageUrl={item.banner_image?.asset.url} key={index} />
                                 ))
                             }

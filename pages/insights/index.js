@@ -25,7 +25,7 @@ export default function index({ insight }) {
                     <div className='grid grid-cols-1 gap-10 md:grid-cols-2'>
                         {
                             insight.map((item, index) => (
-                                <InsightBox index={index} insight={item} />
+                                <InsightBox key={index} insight={item} />
                             ))
                         }
                     </div>
