@@ -10,7 +10,7 @@ export default {
       },
       {
         name: 'position',
-        type: 'text',
+        type: 'string',
         title: 'Position'
       },
       {

@@ -10,9 +10,8 @@ export default {
           options: {
               list: [
                   { title: 'STRATEGY & PLANNING', value: 'STRATEGY_AND_PLANNIN' },
-                  { title: 'II', value: 'II' },
-                  { title: 'III', value: 'III' },
-                  { title: 'ADDITIONAL SERVICES', value: 'ADDITIONAL_SERVICES' },
+                  { title: 'PERFORMANCE', value: 'PERFORMANCE' },
+                  { title: 'TECHNOLOGY', value: 'TECHNOLOGY' },
               ], // <-- predefined values
               layout: 'radio'
           }

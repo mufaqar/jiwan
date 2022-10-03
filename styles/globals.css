@@ -96,8 +96,13 @@ summary::marker {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
-
+._content>div>p{
+margin-bottom: 20px;
+}
+._content>div>p:last-child{
+  margin-bottom: 0px;
+}
+  
 
 
 

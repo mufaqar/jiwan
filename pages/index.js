@@ -7,30 +7,57 @@ import ServiceBox from '../components/service-box';
 import Team from '../components/team';
 import TeamIntro from '../components/team-intro';
 import {AiOutlinePlus} from 'react-icons/ai';
+import { sanityClient } from '../lib/client';
 
+// Query 
+export const FetchInsight = `*[_type == "insights"]{
+  sub_title,
+  feature_image{
+    asset->{
+      url
+    },
+    caption,
+    video_url,
+  },
+  slug,
+}`;
+const caseStudy = `*[_type == "casestudy"]{
+  title,
+  short_info,
+  profit[]->{
+      value,
+      detail
+  },
+  description,
+  name
+}`;
 
-export default function Home({ title, icon }) {
+export default function Home({ insight, casestudy }) {
+  
   return (
     <main>
       <Intro />
 
-      <section className="py-10 px-4 min-h-screen">
+      <section className="min-h-screen px-4 py-10">
         <div className="container mx-auto mb-10">
           <h3 className="text-sm">CASE STUDY</h3>
         </div>
-        <CaseStudy />
+        <CaseStudy casestudy={casestudy}/>
       </section>
 
-      <section className="py-10 px-4">
+      <section className="px-4 py-10">
         <div className="container mx-auto mb-10">
           <h3 className="text-sm">INSIGHTS</h3>
         </div>
-        <div className="container mx-auto items-center">
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
-            <InsightBox title="Lifetime Capital Gains Exemption" icon="/images/insightImg.png" />
-            <InsightBox title="Sale of a Business" icon="/images/insightImg.png" />
-            <InsightBox title="Corporate Reorganization" icon="/images/insightImg.png" />
-            <InsightBox title="Transferring Property to a Family Member" icon="/images/insightImg.png" />
+        <div className="container items-center mx-auto">
+          <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
+            {
+              insight.slice(0,4).map((item, index)=> (
+                <InsightBox index={index} insight={item} />
+              ))
+            }
+            
+            
           </div>
           <div className='flex items-center justify-center mt-10'>
             <Link href="/insights">
@@ -42,11 +69,11 @@ export default function Home({ title, icon }) {
         </div>
       </section>
 
-      <section id='services' className="py-10 md:px-4 px-0">
+      <section id='services' className="px-0 py-10 md:px-4">
         <div className="container mx-auto ">
-          <h3 className="text-sm mb-5 md:px-0 px-4">SERVICES</h3>
-          <div className='grid md:grid-cols-4 grid-cols-1 md:gap-10'>
-            <div className='md:block hidden'>
+          <h3 className="px-4 mb-5 text-sm md:px-0">SERVICES</h3>
+          <div className='grid grid-cols-1 md:grid-cols-4 md:gap-10'>
+            <div className='hidden md:block'>
               <p className='text-sm max-w-[183px]'>We work with a limited number of personal and corporate clients. Here’s how:</p>
             </div>
             <div className='col-span-3'>
@@ -63,4 +90,18 @@ export default function Home({ title, icon }) {
       <Partners />
     </main>
   );
+}
+
+
+
+export async function getStaticProps() {
+  const insight = await sanityClient.fetch(FetchInsight);
+  const casestudy = await sanityClient.fetch(caseStudy);
+
+  return {
+    props: {
+      insight,
+      casestudy
+    }
+  };
 }
