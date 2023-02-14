@@ -11,12 +11,15 @@ import { client, sanityClient } from "../lib/client";
 import { gql } from "@apollo/client";
 
 export default function Home({
-  insights,
+  insight,
   casestudy,
   team,
-  
+  taxation,
+  accounting,
+  assurance,
+  consulting,
 }) {
-
+  console.log("🚀 ~ file: index.js:22 ~ insight", insight)
   return (
     <main>
       <Intro />
@@ -28,17 +31,19 @@ export default function Home({
         <CaseStudy casestudy={casestudy} />
       </section>
 
-      <section className="px-4 py-10">
+      {/*<section className="px-4 py-10">
         <div className="container mx-auto mb-10">
           <h3 className="text-sm">INSIGHTS</h3>
         </div>
         <div className="container items-center mx-auto">
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
-            {insights.slice(0, 4).map((item, index) => (
-              <InsightBox key={index} insight={item} />
-            ))}
+            {
+              insight.slice(0,4).map((item, index)=> (
+                <InsightBox key={index} insight={item} />
+              ))
+            }
           </div>
-          <div className="flex items-center justify-center mt-10">
+          <div className='flex items-center justify-center mt-10'>
             <Link href="/insights">
               <a className="md:text-[14px] text-[11px] text-[#1A4782] underline flex space-x-7 items-center">
                 SEE MORE INSIGHTS <AiOutlinePlus />
@@ -48,25 +53,27 @@ export default function Home({
         </div>
       </section>
 
-      {/* <section id='services' className="px-0 py-10 md:px-4">
-            <div className="container mx-auto ">
-              <h3 className="px-4 mb-5 text-sm md:px-0">SERVICES</h3>
-              <div className='grid grid-cols-1 md:grid-cols-4 md:gap-10'>
-                <div className='hidden md:block'>
-                  <p className='text-sm max-w-[183px]'>We work with a limited number of personal and corporate clients. Here’s how:</p>
-                </div>
-                <div className='col-span-3'>
-                  <ServiceBox taxation={taxation} accounting={accounting} assurance={assurance} consulting={consulting}/>
-                </div>
-              </div>
+
+
+      <section id='services' className="px-0 py-10 md:px-4">
+        <div className="container mx-auto ">
+          <h3 className="px-4 mb-5 text-sm md:px-0">SERVICES</h3>
+          <div className='grid grid-cols-1 md:grid-cols-4 md:gap-10'>
+            <div className='hidden md:block'>
+              <p className='text-sm max-w-[183px]'>We work with a limited number of personal and corporate clients. Here’s how:</p>
             </div>
-          </section> */}
+            <div className='col-span-3'>
+              <ServiceBox taxation={taxation} accounting={accounting} assurance={assurance} consulting={consulting}/>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <TeamIntro />
+      <TeamIntro />
 
-          <Team team={team}/>
+      <Team team={team}/>
 
-          <Partners />
+          <Partners /> */}
     </main>
   );
 }
@@ -98,7 +105,7 @@ export async function getServerSideProps(context) {
   `;
 
   const GET_INSIGHT = gql`
-    query insights {
+    query GETINSIGHT {
       insights {
         nodes {
           excerpt
@@ -125,35 +132,13 @@ export async function getServerSideProps(context) {
     }
   `;
 
-  const GET_TEAM = gql`
-  query Team {
-    teams {
-      nodes {
-        title
-        featuredImage {
-          node {
-            mediaItemUrl
-          }
-        }
-        team {
-          designation
-          name
-        }
-        content
-      }
-    }
-  }
-  `
-
   const GET_CASESTUDY_RESPONCE = await client.query({ query: GET_CASESTUDY });
   const GET_INSIGHT_RESPONCE = await client.query({ query: GET_INSIGHT });
-  const GET_TEAM_RESPONCE = await client.query({ query: GET_TEAM });
 
   return {
     props: {
       casestudy: GET_CASESTUDY_RESPONCE?.data?.caseStudies?.nodes,
-      insights: GET_INSIGHT_RESPONCE?.data?.insights?.nodes,
-      team: GET_TEAM_RESPONCE?.data?.teams?.nodes
+      insights: GET_INSIGHT_RESPONCE
     },
   };
 }

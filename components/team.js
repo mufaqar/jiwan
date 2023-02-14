@@ -4,6 +4,7 @@ import Team1 from '../public/images/team1.png';
 
 
 export default function Team({ team }) {
+    
     const [teamShow, setTeamShow] = useState(null);
     const handleTeam=(id)=>{
         if(teamShow === id){
@@ -18,13 +19,14 @@ export default function Team({ team }) {
                     <div className="grid grid-cols-2 gap-10 lg:grid-cols-4 md:grid-cols-3">
                         {
                             team.map((team, index) => (
-                                <div key={index} className="relative group" onClick={()=>handleTeam(team._id)}>
+                                <div key={index} className="relative group" onClick={()=>handleTeam(index)}>
                                     <figure className="relative w-full">
-                                        <OwnImage path={Team1} alt={team.name}></OwnImage>
+                                        <OwnImage path={team?.featuredImage?.node?.mediaItemUrl} alt={team.name}></OwnImage>
                                     </figure>
-                                    <div className={`absolute inset-0 h-full p-5 text-white bg-black ${ teamShow === team._id ? 'block' : 'hidden' } `}>
-                                        <h2 className="md:text-sm text-[10px]">{team.name}</h2>
-                                        <p className="md:text-sm text-[10px]">{team.position}</p>
+                                    <div className={`absolute inset-0 h-full p-5 text-white bg-black ${ teamShow === index ? 'block' : 'hidden' } `}>
+                                        <h2 className="md:text-sm text-[10px]">{team?.team?.name}</h2>
+                                        <p className="md:text-sm text-[10px]">{team.team?.designation}</p>
+                                        <p className="md:text-sm mt-3 text-[10px]">{team.team?.content}</p>
                                     </div>
                                 </div>
                             ))

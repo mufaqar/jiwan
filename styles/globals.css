@@ -117,3 +117,7 @@ margin-bottom: 20px;
     right: 0;
   }
 }
+
+.bggradient{
+  background: radial-gradient(circle, rgb(26,70,133) 0%, rgba(26,102,131,1) 100%);
+}

@@ -1,30 +1,19 @@
 import InsightBox from '../../components/insight-box';
 import Link from 'next/link';
 import { AiOutlinePlus } from 'react-icons/ai';
-import { sanityClient } from '../../lib/client';
+import { client } from '../../lib/client';
+import { gql } from '@apollo/client';
 
-// Query 
-export const FetchInsight = `*[_type == "insights"]{
-    sub_title,
-    feature_image{
-      asset->{
-        url
-      },
-      caption,
-      video_url,
-    },
-    slug,
-  }`;
-  
 
-export default function index({ insight }) {
+
+export default function index({ insights }) {
     return (
         <main>
             <section className='px-4 py-10'>
                 <div className='container mx-auto'>
                     <div className='grid grid-cols-1 gap-10 md:grid-cols-2'>
                         {
-                            insight.map((item, index) => (
+                            insights?.map((item, index) => (
                                 <InsightBox key={index} insight={item} />
                             ))
                         }
@@ -43,12 +32,42 @@ export default function index({ insight }) {
 }
 
 
-export async function getStaticProps() {
-    const insight = await sanityClient.fetch(FetchInsight);
+export async function getServerSideProps(context) {
+  
+    const GET_INSIGHT = gql`
+      query insights {
+        insights {
+          nodes {
+            excerpt
+            title
+            slug
+            seo {
+              fullHead
+              title
+            }
+            featuredImage {
+              node {
+                mediaItemUrl
+              }
+            }
+            content
+            insights {
+              image {
+                mediaItemUrl
+              }
+              imageCaption
+            }
+          }
+        }
+      }
+    `;
+  
+    const GET_INSIGHT_RESPONCE = await client.query({ query: GET_INSIGHT });
   
     return {
       props: {
-        insight
-      }
+        insights: GET_INSIGHT_RESPONCE?.data?.insights?.nodes 
+      },
     };
   }
+  

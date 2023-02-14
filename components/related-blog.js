@@ -12,7 +12,13 @@ export default function RelatedBlog(props) {
                     <Link href={`${props.link}`}>
                         <h3 className="font-ITCGaramondStdLight tracking-tighter md:text-[32px] cursor-pointer md:leading-[38px] text-[24px] leading-[27px]">{props.title}</h3>
                     </Link>
-                    <p className="md:text-sm text-[10px]">{props.excerpt}</p>
+                    
+                    <div
+                    className="md:text-sm text-[10px]"
+                    dangerouslySetInnerHTML={{
+                      __html: props.excerpt,
+                    }}
+                  ></div>
                 </div>
                 <div>
                     <Link href={`${props.link}`}>
