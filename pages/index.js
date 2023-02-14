@@ -14,7 +14,7 @@ export default function Home({
   insights,
   casestudy,
   team,
-  
+  taxation, accounting, assurance, consulting
 }) {
 
   return (
@@ -48,7 +48,7 @@ export default function Home({
         </div>
       </section>
 
-      {/* <section id='services' className="px-0 py-10 md:px-4">
+       <section id='services' className="px-0 py-10 md:px-4">
             <div className="container mx-auto ">
               <h3 className="px-4 mb-5 text-sm md:px-0">SERVICES</h3>
               <div className='grid grid-cols-1 md:grid-cols-4 md:gap-10'>
@@ -60,7 +60,7 @@ export default function Home({
                 </div>
               </div>
             </div>
-          </section> */}
+          </section> 
 
           <TeamIntro />
 
@@ -145,15 +145,50 @@ export async function getServerSideProps(context) {
   }
   `
 
+  const TaxationQuery = `*[_type == "services_taxation"]{
+    type,
+    name,
+    price
+  }`;
+  const accountingQuery = `*[_type == "services_accounting"]{
+    type,
+    name,
+    price,
+    from
+  }`;
+  const assuranceQuery = `*[_type == "services_assurance"]{
+    type,
+    name,
+    price,
+    from
+  }`;
+  const consultingQuery = `*[_type == "services_consulting"]{
+    type,
+    name,
+    price,
+    from
+  }`;
+
   const GET_CASESTUDY_RESPONCE = await client.query({ query: GET_CASESTUDY });
   const GET_INSIGHT_RESPONCE = await client.query({ query: GET_INSIGHT });
   const GET_TEAM_RESPONCE = await client.query({ query: GET_TEAM });
+
+  const taxation = await sanityClient.fetch(TaxationQuery);
+  const accounting = await sanityClient.fetch(accountingQuery);
+  const assurance = await sanityClient.fetch(assuranceQuery);
+  const consulting = await sanityClient.fetch(consultingQuery);
+
 
   return {
     props: {
       casestudy: GET_CASESTUDY_RESPONCE?.data?.caseStudies?.nodes,
       insights: GET_INSIGHT_RESPONCE?.data?.insights?.nodes,
-      team: GET_TEAM_RESPONCE?.data?.teams?.nodes
+      team: GET_TEAM_RESPONCE?.data?.teams?.nodes,
+
+      taxation,
+      accounting,
+      assurance,
+      consulting
     },
   };
 }
