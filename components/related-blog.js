@@ -4,7 +4,7 @@ import OwnImage from "./OwnImage";
 
 
 export default function RelatedBlog(props) {
-    console.log("🚀 ~ file: related-blog.js ~ line 7 ~ RelatedBlog ~ props", props)
+    
     return (
         <>
             <div className="grid items-center grid-cols-1 gap-5 pb-0 mb-10 border-b border-transparent md:grid-cols-3 md:gap-20 md:border-black md:pb-4 md:mb-5">
