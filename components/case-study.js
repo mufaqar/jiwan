@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import parse from "html-react-parser";
 
 const settings = {
   dots: true,
