@@ -17,8 +17,8 @@ export default function Intro() {
             <figure className="md:flex hidden md:justify-end -z-10">
               <Image src={IntroImg} alt=""></Image>
             </figure>
-            <figure className="md:hidden flex w-full h-[624px] relative -z-10">
-              <Image src={MblIntro} layout="fill" alt=""></Image>
+            <figure className="md:hidden flex w-full h-screen -mt-[100px] relative -z-10">
+              <Image src={MblIntro} layout="fill" className='object-cover' alt=""></Image>
             </figure>
             <div className="text-xs max-w-[539px] ml-auto py-3 md:px-0 px-3">
               <p>Mah Ji preparing sugar canes for Sukhanoop Singh Dhillon.</p>

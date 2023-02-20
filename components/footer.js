@@ -34,9 +34,9 @@ export default function Footer() {
                                 </li>
                             </ul>
                         </div>
-                        <div className="grid gap-14 md:col-span-1 col-span-2 md:order-first order-last">
+                        <div className="grid gap-3 mb-3 md:mb-0 md:gap-14 md:col-span-1 col-span-2 md:order-first order-last">
                             <h2 className="font-ITCGaramondStdLight tracking-tighter md:text-[27px] text-[22px] md:text-center text-white">© Jiwan Dhillon & Company CPA</h2>
-                            <p className="font-AdobCaslonRegular italic md:text-base text-xs text-right md:text-center text-white">c/o Maker Brothers Worldwide®</p>
+                            <p className="font-AdobCaslonRegular italic md:text-base text-xs text-left md:text-center text-white">c/o Maker Brothers Worldwide®</p>
                         </div>
                         <div>
                             <ul className="md:text-right">
