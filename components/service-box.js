@@ -18,7 +18,7 @@ export default function ServiceBox() {
   return (
     <>
       <div className="services Textation">
-        <details className="border-y border-black md:border-transparent open:border-y open:border-black md:mb-12 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
+        <details className="border-y border-black md:border-transparent open:border-y  md:mb-12 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
           <summary className="cursor-pointer flex items-center gap-4" onClick={() => HandleOpen(1)}>
             <div className="flex items-center min-w-[300px]">
               <h2 className={`lg:text-[65px] lg:leading-[78px] md:text-[56px] md:leading-[67px] text-[36px] leading-[43px] font-ITCGaramondStdLight tracking-tighter mr-5 open:italic ${openService === 1 ? 'text-[#1A4781]' : ''}`}>
@@ -184,7 +184,7 @@ export default function ServiceBox() {
       </div>
 
       <div className="services Accounting">
-        <details className="border-b border-black md:border-transparent open:border-b open:border-black md:mb-12 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
+        <details className="border-b border-black md:border-transparent open:border-b  md:mb-12 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
           <summary className="cursor-pointer flex items-center gap-4" onClick={() => HandleOpen(2)}>
             <div className="flex items-center min-w-[350px]">
               <h2 className={`lg:text-[65px] lg:leading-[78px] md:text-[56px] md:leading-[67px] text-[36px] leading-[43px] font-ITCGaramondStdLight tracking-tighter mr-5 open:italic ${openService === 2 ? 'text-[#1A4781]' : ''}`}>
@@ -398,7 +398,7 @@ export default function ServiceBox() {
       </div>
 
       <div className="services Assurance">
-        <details className="border-b border-black md:border-transparent open:border-b open:border-black md:mb-12 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
+        <details className="border-b border-black md:border-transparent open:border-b  md:mb-12 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
           <summary className="cursor-pointer flex items-center gap-4" onClick={() => HandleOpen(3)}>
             <div className="flex items-center min-w-[350px]">
               <h2 className={`lg:text-[65px] lg:leading-[78px] md:text-[56px] md:leading-[67px] text-[36px] leading-[43px] font-ITCGaramondStdLight tracking-tighter mr-5 open:italic ${openService === 3 ? 'text-[#1A4781]' : ''}`}>
@@ -444,7 +444,7 @@ export default function ServiceBox() {
       </div>
 
       <div className="services Consulting">
-        <details className="border-b border-black md:border-transparent open:border-b open:border-black md:mb-14 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
+        <details className="border-b border-black md:border-transparent open:border-b  md:mb-14 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
           <summary className="cursor-pointer flex items-center gap-4" onClick={() => HandleOpen(4)}>
             <div className="flex items-center min-w-[350px]">
               <h2 className={`lg:text-[65px] lg:leading-[78px] md:text-[56px] md:leading-[67px] text-[36px] leading-[43px] font-ITCGaramondStdLight tracking-tighter mr-5 open:italic ${openService === 4 ? 'text-[#1A4781]' : ''}`}>
