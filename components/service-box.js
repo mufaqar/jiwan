@@ -21,7 +21,7 @@ export default function ServiceBox() {
         <details className="border-y border-black md:border-transparent open:border-y open:border-black md:mb-12 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
           <summary className="cursor-pointer flex items-center gap-4" onClick={() => HandleOpen(1)}>
             <div className="flex items-center min-w-[300px]">
-              <h2 className="lg:text-[65px] lg:leading-[78px] md:text-[56px] md:leading-[67px] text-[36px] leading-[43px] font-ITCGaramondStdLight tracking-tighter mr-5 open:italic">
+              <h2 className={`lg:text-[65px] lg:leading-[78px] md:text-[56px] md:leading-[67px] text-[36px] leading-[43px] font-ITCGaramondStdLight tracking-tighter mr-5 open:italic ${openService === 1 ? 'text-[#1A4781]' : ''}`}>
                 Taxation
               </h2>
               <figure className="relative ">
@@ -187,7 +187,7 @@ export default function ServiceBox() {
         <details className="border-b border-black md:border-transparent open:border-b open:border-black md:mb-12 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
           <summary className="cursor-pointer flex items-center gap-4" onClick={() => HandleOpen(2)}>
             <div className="flex items-center min-w-[350px]">
-              <h2 className="lg:text-[65px] lg:leading-[78px] md:text-[56px] md:leading-[67px] text-[36px] leading-[43px] font-ITCGaramondStdLight tracking-tighter mr-5 open:italic">
+              <h2 className={`lg:text-[65px] lg:leading-[78px] md:text-[56px] md:leading-[67px] text-[36px] leading-[43px] font-ITCGaramondStdLight tracking-tighter mr-5 open:italic ${openService === 2 ? 'text-[#1A4781]' : ''}`}>
                 Accounting
               </h2>
               <figure className="relative ">
@@ -401,7 +401,7 @@ export default function ServiceBox() {
         <details className="border-b border-black md:border-transparent open:border-b open:border-black md:mb-12 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
           <summary className="cursor-pointer flex items-center gap-4" onClick={() => HandleOpen(3)}>
             <div className="flex items-center min-w-[350px]">
-              <h2 className="lg:text-[65px] lg:leading-[78px] md:text-[56px] md:leading-[67px] text-[36px] leading-[43px] font-ITCGaramondStdLight tracking-tighter mr-5 open:italic">
+              <h2 className={`lg:text-[65px] lg:leading-[78px] md:text-[56px] md:leading-[67px] text-[36px] leading-[43px] font-ITCGaramondStdLight tracking-tighter mr-5 open:italic ${openService === 3 ? 'text-[#1A4781]' : ''}`}>
                 Assurance
               </h2>
               <figure className="relative ">
@@ -447,7 +447,7 @@ export default function ServiceBox() {
         <details className="border-b border-black md:border-transparent open:border-b open:border-black md:mb-14 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
           <summary className="cursor-pointer flex items-center gap-4" onClick={() => HandleOpen(4)}>
             <div className="flex items-center min-w-[350px]">
-              <h2 className="lg:text-[65px] lg:leading-[78px] md:text-[56px] md:leading-[67px] text-[36px] leading-[43px] font-ITCGaramondStdLight tracking-tighter mr-5 open:italic">
+              <h2 className={`lg:text-[65px] lg:leading-[78px] md:text-[56px] md:leading-[67px] text-[36px] leading-[43px] font-ITCGaramondStdLight tracking-tighter mr-5 open:italic ${openService === 4 ? 'text-[#1A4781]' : ''}`}>
                 Consulting
               </h2>
               <figure className="relative ">
