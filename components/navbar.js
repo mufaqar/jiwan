@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Logo from '../public/images/logo.png';
 import WhiteLogo from '../public/images/whiteLogo.png';
 
@@ -15,14 +15,27 @@ function NavLink({ to, children }) {
 export default function Navbar() {
 
   const [open, setOpen] = useState(false)
+  const [scrollTop, setScrollTop] = useState(0);
+  const [headerClr, setHeaderClr] = useState(false);
 
+  useEffect(() => {
+    function onScroll() {
+      let currentPosition = window.pageYOffset;
+      setScrollTop(currentPosition <= 0 ? 0 : currentPosition);
+    }
+    scrollTop >= '10' ? setHeaderClr(true) : setHeaderClr(false);
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  
+  }, [scrollTop]);
+  
   return (<>
     <Head>
       <title>Jiwan - Dhillon</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
 
-    <nav className="flex  bg-transparent md:px-16 px-8 py-8 h-[100px] items-center">
+    <nav className={`flex fixed z-10 w-full ${headerClr ? 'bg-white shadow-md' : ''}  top-0 bg-transparent md:px-16 px-8 py-8 h-[100px] items-center`}>
 
       {/* mobile Menu Starts */}
 

@@ -10,18 +10,42 @@
 
 @font-face {
   font-family: "ITCGaramondStd-Bd";
-  src: url("../public/fonts/ITCGaramondStd-Bd.ttf");
+  src: url("../public/fonts/ITCGaramond.woff");
 }
 
 @font-face {
   font-family: "ITCGaramondStd-Lt";
-  src: url("../public/fonts/ITCGaramondStd-Lt.ttf");
+  src: url("../public/fonts/ITCGaramond.woff");
 }
 
 @font-face {
   font-family: "Adobe-Caslon-Pro-Regular";
   src: url("../public/fonts/Adobe-Caslon-Pro-Regular.ttf");
 }
+@font-face {
+  font-family: "ABCFavoritEdu";
+  src: url("../public/fonts/ABCFavoritEdu-Book.woff");
+}
+@font-face {
+  font-family: "ABCFavoritMono";
+  src: url("../public/fonts/ABCFavoritMonoEdu-Book.woff");
+}
+
+.font-abc-fav{
+  font-family: "ABCFavoritEdu";
+}
+.font-abc-mono{
+  font-family: "ABCFavoritMono";
+}
+
+h1,h2,h3,h4,h5,h6{
+  letter-spacing: 1px !important;
+}
+
+p{
+  font-family: "ABCFavoritEdu" !important;
+}
+
 
 .services summary {
   position: relative;
@@ -120,4 +144,24 @@ margin-bottom: 20px;
 
 .bggradient{
   background: radial-gradient(circle, rgb(26,70,133) 0%, rgba(26,102,131,1) 100%);
+}
+
+
+
+.animatedGradient {
+  background: linear-gradient(45deg,#1D4783,#A9B7C8);
+  background-size: 180% 180%;
+  animation: gradient-animation 10s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

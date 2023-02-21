@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
     return (
         <>
-            <footer className="bg-gradient-to-bl to-[#1B4582] from-[#BBC5D1] md:bg-black md:py-10 pb-0 pt-9 mt-16">
+            <footer className="animatedGradient md:bg-black md:py-10 pb-0 pt-9 mt-16">
                 <div className="container mx-auto items-center grid gap-10 md:gap-16 p-4">
                     <div>
                         <h2 className="lg:text-[65px] md:leading-[70px] md:text-[53px] text-4xl font-ITCGaramondStdLight tracking-tighter text-white"><span className="underline">Reach out</span> & discover what your business can buy you. </h2>
