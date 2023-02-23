@@ -155,30 +155,6 @@ export async function getServerSideProps(context) {
     }
   `;
 
-  const TaxationQuery = `*[_type == "services_taxation"]{
-    type,
-    name,
-    price
-  }`;
-  const accountingQuery = `*[_type == "services_accounting"]{
-    type,
-    name,
-    price,
-    from
-  }`;
-  const assuranceQuery = `*[_type == "services_assurance"]{
-    type,
-    name,
-    price,
-    from
-  }`;
-  const consultingQuery = `*[_type == "services_consulting"]{
-    type,
-    name,
-    price,
-    from
-  }`;
-
   const GET_CASESTUDY_RESPONCE = await client.query({ query: GET_CASESTUDY });
   const GET_INSIGHT_RESPONCE = await client.query({ query: GET_INSIGHT });
   const GET_TEAM_RESPONCE = await client.query({ query: GET_TEAM });
