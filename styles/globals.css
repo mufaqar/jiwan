@@ -1,70 +1,77 @@
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
-
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
 @font-face {
-  font-family: "ITCGaramondStd-Bd";
-  src: url("../public/fonts/ITCGaramond.woff");
+  font-family: 'ITCGaramondStd-Bd';
+  src: url('../public/fonts/ITCGaramond.woff');
 }
 
 @font-face {
-  font-family: "ITCGaramondStd-Lt";
-  src: url("../public/fonts/ITCGaramond.woff");
+  font-family: 'ITCGaramondStd-Lt';
+  src: url('../public/fonts/ITCGaramond.woff');
 }
 
 @font-face {
-  font-family: "Adobe-Caslon-Pro-Regular";
-  src: url("../public/fonts/Adobe-Caslon-Pro-Regular.ttf");
+  font-family: 'Adobe-Caslon-Pro-Regular';
+  src: url('../public/fonts/Adobe-Caslon-Pro-Regular.ttf');
 }
 @font-face {
-  font-family: "ABCFavoritEdu";
-  src: url("../public/fonts/ABCFavoritEdu-Book.woff");
+  font-family: 'ABCFavoritEdu';
+  src: url('../public/fonts/ABCFavoritEdu-Book.woff');
 }
 @font-face {
-  font-family: "ABCFavoritMono";
-  src: url("../public/fonts/ABCFavoritMonoEdu-Book.woff");
+  font-family: 'ABCFavoritMono';
+  src: url('../public/fonts/ABCFavoritMonoEdu-Book.woff');
 }
 
-.font-abc-fav{
-  font-family: "ABCFavoritEdu";
-}
-.font-abc-mono{
-  font-family: "ABCFavoritMono";
+@layer components {
+  .service_heading {
+    @apply lg:text-[65px] lg:leading-[78px] md:text-[56px] md:leading-[67px] text-[36px] leading-[43px] font-ITCGaramondStdLight tracking-tighter mr-5 open:italic hover:text-[#1a6683];
+  }
 }
 
-h1,h2,h3,h4,h5,h6{
+.font-abc-fav {
+  font-family: 'ABCFavoritEdu';
+}
+.font-abc-mono {
+  font-family: 'ABCFavoritMono';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   letter-spacing: 1px !important;
 }
 
-p{
-  font-family: "ABCFavoritEdu" !important;
+p {
+  font-family: 'ABCFavoritEdu' !important;
 }
-
 
 .services summary {
   position: relative;
 }
 
 summary::marker {
-  content: "";
+  content: '';
 }
 
 .services summary figure::after {
-  color: #1A4782;
+  color: #1a4782;
   content: '\002B';
   font-size: 20px;
   position: absolute;
   top: 0;
   right: -70%;
   transform: rotate(0);
-  transform-origin: .2rem 50%;
-  transition: .6s transform ease;
+  transform-origin: 0.2rem 50%;
+  transition: 0.6s transform ease;
 }
 
 .services details[open] summary figure:after {
@@ -77,7 +84,7 @@ summary::marker {
 
 .slick-dots li.slick-active button:before {
   opacity: 1;
-  color: #1A4782;
+  color: #1a4782;
 }
 
 .slick-dots li button:before {
@@ -86,7 +93,7 @@ summary::marker {
 
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before {
-  color: #1A4782;
+  color: #1a4782;
 }
 
 .slick-dots {
@@ -104,7 +111,7 @@ summary::marker {
 .slick-next:before {
   color: rgba(0, 0, 0, 0);
 }
-.slick-next:before{
+.slick-next:before {
   -webkit-appearance: button;
   background-color: transparent;
   background-image: url('../public/images/arrowR.png');
@@ -112,7 +119,7 @@ summary::marker {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.slick-prev:before{
+.slick-prev:before {
   -webkit-appearance: button;
   background-color: transparent;
   background-image: url('../public/images/arrowL.png');
@@ -120,18 +127,14 @@ summary::marker {
   background-size: contain;
   background-repeat: no-repeat;
 }
-._content>div>p{
-margin-bottom: 20px;
+._content > div > p {
+  margin-bottom: 20px;
 }
-._content>div>p:last-child{
+._content > div > p:last-child {
   margin-bottom: 0px;
 }
-  
-
-
 
 @media screen and (max-width: 767px) {
-
   .slick-prev:before,
   .slick-next:before {
     display: none;
@@ -142,14 +145,16 @@ margin-bottom: 20px;
   }
 }
 
-.bggradient{
-  background: radial-gradient(circle, rgb(26,70,133) 0%, rgba(26,102,131,1) 100%);
+.bggradient {
+  background: radial-gradient(
+    circle,
+    rgb(26, 70, 133) 0%,
+    rgba(26, 102, 131, 1) 100%
+  );
 }
 
-
-
 .animatedGradient {
-  background: linear-gradient(45deg,#1D4783,#A9B7C8);
+  background: linear-gradient(45deg, #1d4783, #a9b7c8);
   background-size: 180% 180%;
   animation: gradient-animation 10s ease infinite;
 }

@@ -6,7 +6,6 @@ import Consulting from '../public/images/consulting.png';
 import { useState } from 'react';
 
 export default function ServiceBox() {
-
   const [openService, setOpenService] = useState(null);
   const HandleOpen = (id) => {
     if (id === openService) {
@@ -19,23 +18,36 @@ export default function ServiceBox() {
     <>
       <div className="services Textation">
         <details className="border-y border-black md:border-transparent open:border-y  md:mb-12 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
-          <summary className="cursor-pointer flex items-center gap-4" onClick={() => HandleOpen(1)}>
-            <div className="flex items-center min-w-[300px]">
-              <h2 className={`lg:text-[65px] lg:leading-[78px] md:text-[56px] md:leading-[67px] text-[36px] leading-[43px] font-ITCGaramondStdLight tracking-tighter mr-5 open:italic ${openService === 1 ? 'text-[#1A4781]' : ''}`}>
+          <summary
+            className="cursor-pointer  items-center gap-4"
+            onClick={() => HandleOpen(1)}
+          >
+            <div
+              className={`pt-[2px] transition-all duration-300 bg-[#1A4781] ${
+                openService === 1 ? 'md:w-full' : 'w-0'
+              } `}
+            ></div>
+            <div className=" flex items-center min-w-[300px]">
+              <h2
+                className={`service_heading ${
+                  openService === 1 ? 'text-[#1A4781]' : ''
+                }`}
+              >
                 Taxation
               </h2>
               <figure className="relative ">
                 <Image src={Textation} alt=""></Image>
-               { openService === 1 && <div className="absolute bg-[#1A4781] top-0 right-0 left-0 bottom-1"></div> }
+                {openService === 1 && (
+                  <div className="absolute bg-[#1A4781] top-0 right-0 left-0 bottom-1"></div>
+                )}
               </figure>
             </div>
-            <div
-              className={`pt-[2px] transition-all duration-300 bg-[#1A4781] ${
-                openService === 1 ? "md:w-full" : "w-0"
-              } `}
-            ></div>
           </summary>
-          <div className={`mt-5 md:w-1/2 ${openService === 1 ? 'block' : 'hidden'}`}>
+          <div
+            className={`mt-5 md:w-1/2 ${
+              openService === 1 ? 'block' : 'hidden'
+            }`}
+          >
             <h3 className="md:text-[15px] md:leading-[20px] text-sm font-normal mb-3">
               PERSONAL
             </h3>
@@ -181,23 +193,37 @@ export default function ServiceBox() {
             </p>
           </div>
         </details>
+        <div
+          className={`pt-[2px] transition-all duration-300 bg-[#1A4781] ${
+            openService === 1 ? 'md:w-full' : 'w-0'
+          } `}
+        ></div>
       </div>
 
       <div className="services Accounting">
         <details className="border-b border-black md:border-transparent open:border-b  md:mb-12 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
-          <summary className="cursor-pointer flex items-center gap-4" onClick={() => HandleOpen(2)}>
+          <summary
+            className="cursor-pointer flex items-center gap-4"
+            onClick={() => HandleOpen(2)}
+          >
             <div className="flex items-center min-w-[350px]">
-              <h2 className={`lg:text-[65px] lg:leading-[78px] md:text-[56px] md:leading-[67px] text-[36px] leading-[43px] font-ITCGaramondStdLight tracking-tighter mr-5 open:italic ${openService === 2 ? 'text-[#1A4781]' : ''}`}>
+              <h2
+                className={`service_heading ${
+                  openService === 2 ? 'text-[#1A4781]' : ''
+                }`}
+              >
                 Accounting
               </h2>
               <figure className="relative ">
                 <Image src={Accounting} alt=""></Image>
-                { openService === 2 && <div className="absolute bg-[#1A4781] top-0 right-0 left-0 bottom-1"></div> }
+                {openService === 2 && (
+                  <div className="absolute bg-[#1A4781] top-0 right-0 left-0 bottom-1"></div>
+                )}
               </figure>
             </div>
             <div
               className={`pt-[2px] transition-all duration-300 bg-[#1A4781] ${
-                openService === 2 ? "md:w-full" : "w-0"
+                openService === 2 ? 'md:w-full' : 'w-0'
               } `}
             ></div>
           </summary>
@@ -330,19 +356,31 @@ export default function ServiceBox() {
                 <ul className="mb-10">
                   <li className="md:text-[13px] text-xs flex justify-between border-y border-black/30 py-2">
                     <span>Trust returns</span>
-                    <span className='w-1/4 flex justify-between'><span>From</span><span>$1,000</span></span>
+                    <span className="w-1/4 flex justify-between">
+                      <span>From</span>
+                      <span>$1,000</span>
+                    </span>
                   </li>
                   <li className="md:text-[13px] text-xs flex justify-between border-b border-black/30 py-2">
                     <span>Amalgamations and Wind Ups</span>
-                    <span className='w-1/4 flex justify-between'><span>From</span><span>$6,000</span></span>
+                    <span className="w-1/4 flex justify-between">
+                      <span>From</span>
+                      <span>$6,000</span>
+                    </span>
                   </li>
                   <li className="md:text-[13px] text-xs flex justify-between border-b border-black/30 py-2">
-                    <span>Corporate Reorganizations</span>                    
-                    <span className='w-1/4 flex justify-between'><span>From</span><span>$6,000</span></span>
+                    <span>Corporate Reorganizations</span>
+                    <span className="w-1/4 flex justify-between">
+                      <span>From</span>
+                      <span>$6,000</span>
+                    </span>
                   </li>
                   <li className="md:text-[13px] text-xs flex justify-between border-b border-black/30 py-2">
-                    <span>Asset transfers</span>                    
-                    <span className='w-1/4 flex justify-between'><span>From</span><span>$6,000</span></span>
+                    <span>Asset transfers</span>
+                    <span className="w-1/4 flex justify-between">
+                      <span>From</span>
+                      <span>$6,000</span>
+                    </span>
                   </li>
                   <li className="md:text-[13px] text-xs flex justify-between border-b border-black/30 py-2">
                     <span>Tax Planning and Compliance</span>
@@ -399,23 +437,36 @@ export default function ServiceBox() {
 
       <div className="services Assurance">
         <details className="border-b border-black md:border-transparent open:border-b  md:mb-12 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
-          <summary className="cursor-pointer flex items-center gap-4" onClick={() => HandleOpen(3)}>
+          <summary
+            className="cursor-pointer flex items-center gap-4"
+            onClick={() => HandleOpen(3)}
+          >
             <div className="flex items-center min-w-[350px]">
-              <h2 className={`lg:text-[65px] lg:leading-[78px] md:text-[56px] md:leading-[67px] text-[36px] leading-[43px] font-ITCGaramondStdLight tracking-tighter mr-5 open:italic ${openService === 3 ? 'text-[#1A4781]' : ''}`}>
+              <h2
+                className={`service_heading ${
+                  openService === 3 ? 'text-[#1A4781]' : ''
+                }`}
+              >
                 Assurance
               </h2>
               <figure className="relative ">
                 <Image src={Assurance} alt=""></Image>
-                { openService === 3 && <div className="absolute bg-[#1A4781] top-0 right-0 left-0 bottom-1"></div> }
+                {openService === 3 && (
+                  <div className="absolute bg-[#1A4781] top-0 right-0 left-0 bottom-1"></div>
+                )}
               </figure>
             </div>
             <div
               className={`pt-[2px] transition-all duration-300 bg-[#1A4781] ${
-                openService === 3 ? "md:w-full" : "w-0"
+                openService === 3 ? 'md:w-full' : 'w-0'
               } `}
             ></div>
           </summary>
-          <div className={`mt-5 md:w-1/2 ${openService === 3 ? 'block' : 'hidden'}`}>
+          <div
+            className={`mt-5 md:w-1/2 ${
+              openService === 3 ? 'block' : 'hidden'
+            }`}
+          >
             <h3 className="md:text-[15px] md:leading-[20px] text-sm font-normal mb-3 flex justify-between">
               AUDIT <span>From</span>
             </h3>
@@ -445,19 +496,28 @@ export default function ServiceBox() {
 
       <div className="services Consulting">
         <details className="border-b border-black md:border-transparent open:border-b  md:mb-14 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
-          <summary className="cursor-pointer flex items-center gap-4" onClick={() => HandleOpen(4)}>
+          <summary
+            className="cursor-pointer flex items-center gap-4"
+            onClick={() => HandleOpen(4)}
+          >
             <div className="flex items-center min-w-[350px]">
-              <h2 className={`lg:text-[65px] lg:leading-[78px] md:text-[56px] md:leading-[67px] text-[36px] leading-[43px] font-ITCGaramondStdLight tracking-tighter mr-5 open:italic ${openService === 4 ? 'text-[#1A4781]' : ''}`}>
+              <h2
+                className={`service_heading ${
+                  openService === 4 ? 'text-[#1A4781]' : ''
+                }`}
+              >
                 Consulting
               </h2>
               <figure className="relative ">
                 <Image src={Consulting} alt=""></Image>
-                { openService === 4 && <div className="absolute bg-[#1A4781] top-0 right-0 left-0 bottom-1"></div> }
+                {openService === 4 && (
+                  <div className="absolute bg-[#1A4781] top-0 right-0 left-0 bottom-1"></div>
+                )}
               </figure>
             </div>
             <div
               className={`pt-[2px] transition-all duration-300 bg-[#1A4781] ${
-                openService === 4 ? "md:w-full" : "w-0"
+                openService === 4 ? 'md:w-full' : 'w-0'
               } `}
             ></div>
           </summary>
@@ -470,19 +530,31 @@ export default function ServiceBox() {
                 <ul className="mb-5">
                   <li className="md:text-[13px] text-xs flex justify-between border-y border-black/30 py-2">
                     <span>Strategic and Operational Plans</span>
-                    <span className='w-1/4 flex justify-between'><span>From</span><span>$5,000</span></span>                    
+                    <span className="w-1/4 flex justify-between">
+                      <span>From</span>
+                      <span>$5,000</span>
+                    </span>
                   </li>
                   <li className="md:text-[13px] text-xs flex justify-between border-b border-black/30 py-2">
                     <span>Business plans</span>
-                    <span className='w-1/4 flex justify-between'><span>From</span><span>$2,500</span></span>                    
+                    <span className="w-1/4 flex justify-between">
+                      <span>From</span>
+                      <span>$2,500</span>
+                    </span>
                   </li>
                   <li className="md:text-[13px] text-xs flex justify-between border-b border-black/30 py-2">
                     <span>Busines valuations</span>
-                    <span className='w-1/4 flex justify-between'><span>From</span><span>$2,500</span></span>                    
+                    <span className="w-1/4 flex justify-between">
+                      <span>From</span>
+                      <span>$2,500</span>
+                    </span>
                   </li>
                   <li className="md:text-[13px] text-xs flex justify-between border-b border-black/30 py-2">
                     <span>Financial projections</span>
-                    <span className='w-1/4 flex justify-between'><span>From</span><span>$2,500</span></span>                    
+                    <span className="w-1/4 flex justify-between">
+                      <span>From</span>
+                      <span>$2,500</span>
+                    </span>
                   </li>
                   <li className="md:text-[13px] text-xs flex justify-between border-b border-black/30 py-2">
                     <span>Purchase and Sale of a Business</span>
