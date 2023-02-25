@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import Textation from '../public/images/textation.png';
-import Accounting from '../public/images/accounting.png';
-import Assurance from '../public/images/assurance.png';
-import Consulting from '../public/images/consulting.png';
+import Textation from '../public/images/textation.webp';
+import Accounting from '../public/images/accounting.webp';
+import Assurance from '../public/images/assurance.webp';
+import Consulting from '../public/images/consulting.webp';
 import { useState } from 'react';
 
 export default function ServiceBox() {
@@ -36,7 +36,7 @@ export default function ServiceBox() {
                 Taxation
               </h2>
               <figure className="relative ">
-                <Image src={Textation} alt=""></Image>
+                <Image src={Textation} alt="" width={42} height={42}></Image>
                 {openService === 1 && (
                   <div className="absolute bg-[#1A4781] top-0 right-0 left-0 bottom-1"></div>
                 )}
@@ -215,7 +215,7 @@ export default function ServiceBox() {
                 Accounting
               </h2>
               <figure className="relative ">
-                <Image src={Accounting} alt=""></Image>
+                <Image src={Accounting} alt="" width={42} height={42}></Image>
                 {openService === 2 && (
                   <div className="absolute bg-[#1A4781] top-0 right-0 left-0 bottom-1"></div>
                 )}
@@ -450,7 +450,7 @@ export default function ServiceBox() {
                 Assurance
               </h2>
               <figure className="relative ">
-                <Image src={Assurance} alt=""></Image>
+                <Image src={Assurance} alt="" width={42} height={42}></Image>
                 {openService === 3 && (
                   <div className="absolute bg-[#1A4781] top-0 right-0 left-0 bottom-1"></div>
                 )}
@@ -509,7 +509,7 @@ export default function ServiceBox() {
                 Consulting
               </h2>
               <figure className="relative ">
-                <Image src={Consulting} alt=""></Image>
+                <Image src={Consulting} alt="" width={42} height={42}></Image>
                 {openService === 4 && (
                   <div className="absolute bg-[#1A4781] top-0 right-0 left-0 bottom-1"></div>
                 )}
