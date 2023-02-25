@@ -1,35 +1,33 @@
-import Image from "next/image";
-import OwnImage from "../../components/OwnImage";
+import Image from 'next/image';
+import OwnImage from '../../components/OwnImage';
 import {
   FaEnvelope,
   FaFacebookF,
   FaLink,
   FaLinkedinIn,
   FaTwitter,
-} from "react-icons/fa";
-import Link from "next/link";
-import RelatedBlog from "../../components/related-blog";
-import { client, sanityClient } from "../../lib/client";
-import PortableText from "react-portable-text";
-import { useRef, useState } from "react";
-import { useEffect } from "react";
-import Router from "next/router";
-import { gql } from "@apollo/client";
+} from 'react-icons/fa';
+import Link from 'next/link';
+import RelatedBlog from '../../components/related-blog';
+import { client, sanityClient } from '../../lib/client';
+import PortableText from 'react-portable-text';
+import { useRef, useState } from 'react';
+import { useEffect } from 'react';
+import Router from 'next/router';
+import { gql } from '@apollo/client';
 
 export default function SingleArticle({ allinsights, insight }) {
- 
-  
-  const [domainName, setDomainName] = useState("");
+  const [domainName, setDomainName] = useState('');
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    if (typeof window !== 'undefined') {
       setDomainName(window.origin);
     }
   }, []);
 
   return (
     <main>
-      <section className="py-10 ">
+      <section className="py-10 mt-[124px]">
         <div className="container mx-auto">
           <div className="md:max-w-[815px] mx-auto md:px-0 px-4 mb-10">
             <h2 className="font-ITCGaramondStdLight tracking-tighter md:text-[56px] md:leading-[56px] text-[38px] leading-[41px] mb-3">
@@ -112,12 +110,13 @@ export default function SingleArticle({ allinsights, insight }) {
             </div>
 
             <div className="pt-10 mt-4 text-xl border-t border-black _content ">
-              {insight?.content && <div
-                
-                dangerouslySetInnerHTML={{
-                  __html: insight?.content,
-                }}
-              ></div>}
+              {insight?.content && (
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: insight?.content,
+                  }}
+                ></div>
+              )}
             </div>
           </div>
         </div>
@@ -148,7 +147,7 @@ export default function SingleArticle({ allinsights, insight }) {
 }
 
 export async function getStaticProps({ params }) {
-  console.log("params.slug", params.slug);
+  console.log('params.slug', params.slug);
   const GET_INSIGHT = gql`
     query insight($id: ID!) {
       insight(id: $id, idType: URI) {
@@ -216,7 +215,7 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       insight: response?.data?.insight,
-      allinsights: ALL_INSIGHT?.data?.insights?.nodes 
+      allinsights: ALL_INSIGHT?.data?.insights?.nodes,
     },
   };
 }
@@ -225,6 +224,6 @@ export async function getStaticPaths() {
   const paths = [];
   return {
     paths,
-    fallback: "blocking",
+    fallback: 'blocking',
   };
 }
