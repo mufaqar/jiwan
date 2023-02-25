@@ -7,7 +7,7 @@ import { gql } from '@apollo/client';
 export default function index({ insights }) {
   return (
     <main>
-      <section className="px-4 py-10">
+      <section className="px-4 py-10 mt-[124px]">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
             {insights?.map((item, index) => (
