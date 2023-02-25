@@ -32,6 +32,14 @@
   .service_heading {
     @apply lg:text-[65px] lg:leading-[78px] md:text-[56px] md:leading-[67px] text-[36px] leading-[43px] font-ITCGaramondStdLight tracking-tighter mr-5 open:italic hover:text-[#1a6683];
   }
+
+  .case_slider_heading {
+    @apply font-ITCGaramondStdLight lg:text-[56px] lg:leading-[60px] md:text-[50px] text-[42px] leading-[47px] tracking-tighter max-w-[30rem];
+  }
+
+  .case_study_details {
+    @apply md:text-[21px] text-[18px] font-ITCGaramondStdBold tracking-tighter;
+  }
 }
 
 .font-abc-fav {

@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
+import React, { Component } from 'react';
+import Slider from 'react-slick';
 
 const settings = {
   dots: true,
@@ -19,9 +19,7 @@ const SimpleSlider = ({ casestudy }) => {
             <div key={index} className="container mx-auto">
               <div className="grid border border-black/70 md:py-10 md:px-14 md:gap-14">
                 <div className="grid grid-cols-1 gap-5 px-8 py-5 md:grid-cols-2 md:p-0">
-                  <h2 className="font-ITCGaramondStdLight lg:text-[56px] lg:leading-[60px] md:text-[50px] text-[42px] leading-[47px] tracking-tighter max-w-[30rem]">
-                    {slide?.title}
-                  </h2>
+                  <h2 className="case_slider_heading">{slide?.title}</h2>
                   <div className="text-sm max-w-[414px]">
                     <div
                       dangerouslySetInnerHTML={{
@@ -46,7 +44,7 @@ const SimpleSlider = ({ casestudy }) => {
 
                 <div className="max-w-[900px] md:p-0 py-5 px-8">
                   <div
-                    className="md:text-[22px] text-[18px] font-ITCGaramondStdLight tracking-tighter"
+                    className="case_study_details"
                     dangerouslySetInnerHTML={{
                       __html: slide?.content,
                     }}

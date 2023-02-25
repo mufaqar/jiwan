@@ -10,7 +10,7 @@ export default function Intro() {
           <div className="md:order-first order-last md:px-0 px-4">
             <h2 className="lg:text-[64px] md:leading-[64px] md:text-[54px] text-[36px] leading-[36px] font-ITCGaramondStdLight tracking-tighter capitalize">
               What does your business <br></br>
-              <span className="italic">buy you?</span>
+              <span>buy you?</span>
             </h2>
           </div>
           <div>
@@ -18,7 +18,12 @@ export default function Intro() {
               <Image src={IntroImg} alt=""></Image>
             </figure>
             <figure className="md:hidden flex w-full h-screen -mt-[100px] relative -z-10">
-              <Image src={MblIntro} layout="fill" className='object-cover' alt=""></Image>
+              <Image
+                src={MblIntro}
+                layout="fill"
+                className="object-cover"
+                alt=""
+              ></Image>
             </figure>
             <div className="text-xs max-w-[539px] ml-auto py-3 md:px-0 px-3">
               <p>Mah Ji preparing sugar canes for Sukhanoop Singh Dhillon.</p>
