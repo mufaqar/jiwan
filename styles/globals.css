@@ -100,6 +100,7 @@ summary::marker {
 
 .services details[open] summary figure:after {
   transform: rotate(135deg);
+  display: none;
 }
 
 .services details[open] summary h2 {
