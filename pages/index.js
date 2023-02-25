@@ -43,7 +43,10 @@ export default function Home({
           <div className="flex items-center justify-center mt-10">
             <Link href="/insights">
               <a className="md:text-[14px] text-[11px] text-[#1A4782] underline flex space-x-7 items-center">
-                SEE MORE INSIGHTS <AiOutlinePlus />
+                SEE MORE INSIGHTS
+                <span className="pl-[10px]">
+                  <AiOutlinePlus />
+                </span>
               </a>
             </Link>
           </div>
