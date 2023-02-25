@@ -27,7 +27,7 @@ export default function ServiceBox() {
                 openService === 1 ? 'md:w-full' : 'w-0'
               } `}
             ></div>
-            <div className=" flex items-center min-w-[300px]">
+            <div className="flex items-center min-w-[300px]">
               <h2
                 className={`service_heading ${
                   openService === 1 ? 'text-[#1A4781]' : ''
@@ -203,9 +203,14 @@ export default function ServiceBox() {
       <div className="services Accounting">
         <details className="border-b border-black md:border-transparent open:border-b  md:mb-12 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
           <summary
-            className="cursor-pointer flex items-center gap-4"
+            className="cursor-pointer  items-center gap-4"
             onClick={() => HandleOpen(2)}
           >
+            <div
+              className={`pt-[2px] transition-all duration-300 bg-[#1A4781] ${
+                openService === 2 ? 'md:w-full' : 'w-0'
+              } `}
+            ></div>
             <div className="flex items-center min-w-[350px]">
               <h2
                 className={`service_heading ${
@@ -221,11 +226,6 @@ export default function ServiceBox() {
                 )}
               </figure>
             </div>
-            <div
-              className={`pt-[2px] transition-all duration-300 bg-[#1A4781] ${
-                openService === 2 ? 'md:w-full' : 'w-0'
-              } `}
-            ></div>
           </summary>
           <div className={`mt-5 ${openService === 2 ? 'block' : 'hidden'}`}>
             <div className="grid md:grid-cols-3 grid-cols-1 gap-5">
@@ -433,14 +433,25 @@ export default function ServiceBox() {
             </div>
           </div>
         </details>
+
+        <div
+          className={`pt-[2px] transition-all duration-300 bg-[#1A4781] ${
+            openService === 2 ? 'md:w-full' : 'w-0'
+          } `}
+        ></div>
       </div>
 
       <div className="services Assurance">
         <details className="border-b border-black md:border-transparent open:border-b  md:mb-12 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
           <summary
-            className="cursor-pointer flex items-center gap-4"
+            className="cursor-pointer  items-center gap-4"
             onClick={() => HandleOpen(3)}
           >
+            <div
+              className={`pt-[2px] transition-all duration-300 bg-[#1A4781] ${
+                openService === 3 ? 'md:w-full' : 'w-0'
+              } `}
+            ></div>
             <div className="flex items-center min-w-[350px]">
               <h2
                 className={`service_heading ${
@@ -456,11 +467,7 @@ export default function ServiceBox() {
                 )}
               </figure>
             </div>
-            <div
-              className={`pt-[2px] transition-all duration-300 bg-[#1A4781] ${
-                openService === 3 ? 'md:w-full' : 'w-0'
-              } `}
-            ></div>
+            
           </summary>
           <div
             className={`mt-5 md:w-1/2 ${
@@ -492,14 +499,26 @@ export default function ServiceBox() {
             </p>
           </div>
         </details>
+
+        <div
+          className={`pt-[2px] transition-all duration-300 bg-[#1A4781] ${
+            openService === 3 ? 'md:w-full' : 'w-0'
+          } `}
+        ></div>
       </div>
 
       <div className="services Consulting">
         <details className="border-b border-black md:border-transparent open:border-b  md:mb-14 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
           <summary
-            className="cursor-pointer flex items-center gap-4"
+            className="cursor-pointer items-center gap-4"
             onClick={() => HandleOpen(4)}
           >
+            <div
+              className={`pt-[2px] transition-all duration-300 bg-[#1A4781] ${
+                openService === 4 ? 'md:w-full' : 'w-0'
+              } `}
+            ></div>
+
             <div className="flex items-center min-w-[350px]">
               <h2
                 className={`service_heading ${
@@ -515,11 +534,6 @@ export default function ServiceBox() {
                 )}
               </figure>
             </div>
-            <div
-              className={`pt-[2px] transition-all duration-300 bg-[#1A4781] ${
-                openService === 4 ? 'md:w-full' : 'w-0'
-              } `}
-            ></div>
           </summary>
           <div className={`mt-5 ${openService === 4 ? 'block' : 'hidden'}`}>
             <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
@@ -599,6 +613,11 @@ export default function ServiceBox() {
             </div>
           </div>
         </details>
+        <div
+          className={`pt-[2px] transition-all duration-300 bg-[#1A4781] ${
+            openService === 4 ? 'md:w-full' : 'w-0'
+          } `}
+        ></div>
       </div>
     </>
   );
