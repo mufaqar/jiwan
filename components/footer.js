@@ -44,11 +44,11 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="grid gap-3 mb-3 md:mb-0 md:gap-14 md:col-span-1 col-span-2 md:order-first order-last">
+            <div className="grid gap-3 md:gap-[2.2rem] mb-3 md:mb-0  md:col-span-1 col-span-2 md:order-first order-last">
               <h2 className="font-ITCGaramondStdLight mt-8 md:mt-0 tracking-tighter md:text-[27px] text-[22px] md:text-center text-white">
                 © Jiwan Dhillon & Company CPA
               </h2>
-              <p className="order-first md:order-2 font-AdobCaslonRegular italic md:text-base text-xs text-left md:text-center text-white">
+              <p className="order-first md:order-2 font-AdobCaslonRegular md:text-base text-xs text-left md:text-center text-white">
                 {' '}
                 a nice one by Maker Brothers Worldwide®
               </p>
