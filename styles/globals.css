@@ -81,6 +81,11 @@ summary::marker {
   font-family: 'ITCGaramondStd-Lt' !important;
 }
 
+.servic_list_title2 .price,
+.servic_list_title .price {
+  font-family: 'ABCFavoritMono' !important;
+}
+
 .services summary figure::after {
   color: #1a4782;
   content: '\002B';

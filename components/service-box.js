@@ -54,7 +54,7 @@ export default function ServiceBox() {
             <ul className="mb-10">
               <li className="servic_list_title">
                 <span>T1 Personal Tax Return</span>
-                <span>$100</span>
+                <span className="price">$100</span>
               </li>
             </ul>
             <h3 className="md:text-[15px] md:leading-[20px] text-sm font-normal mb-3">
@@ -63,123 +63,123 @@ export default function ServiceBox() {
             <ul className="mb-10">
               <li className="servic_list_title">
                 <span>Business Income (Per Business)</span>
-                <span>$300</span>
+                <span className="price">$300</span>
               </li>
               <li className="servic_list_title2">
                 <span>Rental income (per business) </span>
-                <span>$100</span>
+                <span className="price">$100</span>
               </li>
               <li className="servic_list_title2">
                 <span>Moving expenses</span>
-                <span>$100</span>
+                <span className="price">$100</span>
               </li>
               <li className="servic_list_title2">
                 <span>Employment expenses</span>
-                <span>$100</span>
+                <span className="price">$100</span>
               </li>
               <li className="servic_list_title2">
                 <span>Automobile expense</span>
-                <span>$35</span>
+                <span className="price">$35</span>
               </li>
               <li className="servic_list_title2">
                 <span>Meals and Lodging Expenses</span>
-                <span>$100</span>
+                <span className="price">$100</span>
               </li>
               <li className="servic_list_title2">
                 <span>Childcare expenses</span>
-                <span>$100</span>
+                <span className="price">$100</span>
               </li>
               <li className="servic_list_title2">
                 <span>Capital gains</span>
-                <span>$30</span>
+                <span className="price">$30</span>
               </li>
               <li className="servic_list_title2">
                 <span>Sale of Principle Residence</span>
-                <span>$50</span>
+                <span className="price">$50</span>
               </li>
               <li className="servic_list_title2">
                 <span>Eligible/Infirm/Dependants</span>
-                <span>$30</span>
+                <span className="price">$30</span>
               </li>
               <li className="servic_list_title2">
                 <span>Donations</span>
-                <span>$10</span>
+                <span className="price">$10</span>
               </li>
               <li className="servic_list_title2">
                 <span>Medical expenses</span>
-                <span>$10</span>
+                <span className="price">$10</span>
               </li>
               <li className="servic_list_title2">
                 <span>RRSP deductions</span>
-                <span>$10</span>
+                <span className="price">$10</span>
               </li>
               <li className="servic_list_title2">
                 <span>Other deductions</span>
-                <span>$10</span>
+                <span className="price">$10</span>
               </li>
               <li className="servic_list_title2">
                 <span>Request for Loss Carryback</span>
-                <span>$30</span>
+                <span className="price">$30</span>
               </li>
               <li className="servic_list_title2">
                 <span>Authorize a Representative</span>
-                <span>$30</span>
+                <span className="price">$30</span>
               </li>
               <li className="servic_list_title2">
                 <span>Training credits</span>
-                <span>$30</span>
+                <span className="price">$30</span>
               </li>
               <li className="servic_list_title2">
                 <span>Joint Election to Split Pension Income</span>
-                <span>$40</span>
+                <span className="price">$40</span>
               </li>
               <li className="servic_list_title2">
                 <span>Foreign income statement (T1135)</span>
-                <span>$100</span>
+                <span className="price">$100</span>
               </li>
               <li className="servic_list_title2">
                 <span>Federal foreign tax credit</span>
-                <span>$30</span>
+                <span className="price">$30</span>
               </li>
               <li className="servic_list_title2">
                 <span>Foreign income (per slip)</span>
-                <span>$50</span>
+                <span className="price">$50</span>
               </li>
               <li className="servic_list_title2">
                 <span>Net capital losses</span>
-                <span>$20</span>
+                <span className="price">$20</span>
               </li>
               <li className="servic_list_title2">
                 <span>Net non-capital loses</span>
-                <span>$20</span>
+                <span className="price">$20</span>
               </li>
               <li className="servic_list_title2">
                 <span>Northern resident deduction</span>
-                <span>$50</span>
+                <span className="price">$50</span>
               </li>
               <li className="servic_list_title2">
                 <span>Bookkeeping</span>
-                <span>$70/hr</span>
+                <span className="price">$70/hr</span>
               </li>
               <li className="servic_list_title2">
                 <span>Complex investments, capital gains</span>
-                <span>$100/hr</span>
+                <span className="price">$100/hr</span>
               </li>
               <li className="servic_list_title2">
                 <span>Complex reconciliations</span>
-                <span>$100/hr</span>
+                <span className="price">$100/hr</span>
               </li>
               <li className="servic_list_title2">
                 <span>CRA post assessment review</span>
-                <span>$70/hr</span>
+                <span className="price">$70/hr</span>
               </li>
               <li className="servic_list_title2">
                 <span>CRA audit support</span>
-                <span>$250/hr</span>
+                <span className="price">$250/hr</span>
               </li>
               <li className="servic_list_title2">
                 <span>Complex tax planning</span>
-                <span>$250/hr</span>
+                <span className="price">$250/hr</span>
               </li>
             </ul>
             <p className="text-[9px] mb-3">
@@ -235,7 +235,7 @@ export default function ServiceBox() {
                 </h3>
                 <ul className="mb-10">
                   <li className="servic_list_title">
-                    <span>$250/month</span>
+                    <span className="price">$250/month</span>
                   </li>
                   <li className="servic_list_title2">
                     <span>Annual accounting</span>
@@ -358,41 +358,41 @@ export default function ServiceBox() {
                     <span>Trust returns</span>
                     <span className="w-1/4 flex justify-between">
                       <span>From</span>
-                      <span>$1,000</span>
+                      <span className="price">$1,000</span>
                     </span>
                   </li>
                   <li className="servic_list_title2">
                     <span>Amalgamations and Wind Ups</span>
                     <span className="w-1/4 flex justify-between">
                       <span>From</span>
-                      <span>$6,000</span>
+                      <span className="price">$6,000</span>
                     </span>
                   </li>
                   <li className="servic_list_title2">
                     <span>Corporate Reorganizations</span>
                     <span className="w-1/4 flex justify-between">
                       <span>From</span>
-                      <span>$6,000</span>
+                      <span className="price">$6,000</span>
                     </span>
                   </li>
                   <li className="servic_list_title2">
                     <span>Asset transfers</span>
                     <span className="w-1/4 flex justify-between">
                       <span>From</span>
-                      <span>$6,000</span>
+                      <span className="price">$6,000</span>
                     </span>
                   </li>
                   <li className="servic_list_title2">
                     <span>Tax Planning and Compliance</span>
-                    <span>$250/hr</span>
+                    <span className="price">$250/hr</span>
                   </li>
                   <li className="servic_list_title2">
                     <span>CRA post assessment review</span>
-                    <span>$70/hr</span>
+                    <span className="price">$70/hr</span>
                   </li>
                   <li className="servic_list_title2">
                     <span>CRA Audit support</span>
-                    <span>$250/hr</span>
+                    <span className="price">$250/hr</span>
                   </li>
                   <li className="servic_list_title2">
                     <span>Additional reconcillation accounts</span>
@@ -479,15 +479,15 @@ export default function ServiceBox() {
             <ul className="mb-10">
               <li className="servic_list_title">
                 <span>Audit engagement</span>
-                <span>$10,000</span>
+                <span className="price">$10,000</span>
               </li>
               <li className="servic_list_title2">
                 <span>Review engagement</span>
-                <span>$5,000</span>
+                <span className="price">$5,000</span>
               </li>
               <li className="servic_list_title2">
                 <span>Business review</span>
-                <span>$2,000</span>
+                <span className="price">$2,000</span>
               </li>
             </ul>
             <p className="text-[9px]">
@@ -545,33 +545,33 @@ export default function ServiceBox() {
                     <span>Strategic and Operational Plans</span>
                     <span className="w-1/4 flex justify-between">
                       <span>From</span>
-                      <span>$5,000</span>
+                      <span className="price">$5,000</span>
                     </span>
                   </li>
                   <li className="servic_list_title2">
                     <span>Business plans</span>
                     <span className="w-1/4 flex justify-between">
                       <span>From</span>
-                      <span>$2,500</span>
+                      <span className="price">$2,500</span>
                     </span>
                   </li>
                   <li className="servic_list_title2">
                     <span>Busines valuations</span>
                     <span className="w-1/4 flex justify-between">
                       <span>From</span>
-                      <span>$2,500</span>
+                      <span className="price">$2,500</span>
                     </span>
                   </li>
                   <li className="servic_list_title2">
                     <span>Financial projections</span>
                     <span className="w-1/4 flex justify-between">
                       <span>From</span>
-                      <span>$2,500</span>
+                      <span className="price">$2,500</span>
                     </span>
                   </li>
                   <li className="servic_list_title2">
                     <span>Purchase and Sale of a Business</span>
-                    <span>$250/hr</span>
+                    <span className="price">$250/hr</span>
                   </li>
                 </ul>
               </div>
@@ -582,15 +582,15 @@ export default function ServiceBox() {
                 <ul className="mb-5">
                   <li className="servic_list_title">
                     <span>Technology Implementation</span>
-                    <span>$250/hr</span>
+                    <span className="price">$250/hr</span>
                   </li>
                   <li className="servic_list_title2">
                     <span>Cyber Security</span>
-                    <span>$250/hr</span>
+                    <span className="price">$250/hr</span>
                   </li>
                   <li className="servic_list_title2">
                     <span>Software Training</span>
-                    <span>$250/hr</span>
+                    <span className="price">$250/hr</span>
                   </li>
                 </ul>
               </div>
@@ -601,11 +601,11 @@ export default function ServiceBox() {
                 <ul className="mb-5">
                   <li className="servic_list_title">
                     <span>Business process improvement</span>
-                    <span>$250/hr</span>
+                    <span className="price">$250/hr</span>
                   </li>
                   <li className="servic_list_title2">
                     <span>Supply chain management</span>
-                    <span>$250/hr</span>
+                    <span className="price">$250/hr</span>
                   </li>
                 </ul>
               </div>
