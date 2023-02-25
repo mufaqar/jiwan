@@ -37,7 +37,7 @@ export default function Navbar() {
 
       <nav
         className={`flex fixed z-10 w-full ${
-          headerClr ? 'bg-white shadow-md' : ''
+          headerClr ? 'bg-[#fffff7] shadow-md' : ''
         }  top-0  md:px-16 px-8 py-8 h-[100px] items-center`}
       >
         {/* mobile Menu Starts */}
@@ -94,12 +94,12 @@ export default function Navbar() {
             {/* hamburger button */}
             <span
               className={`h-[3px]  w-full bg-black rounded-lg transform transition duration-300 ease-in-out ${
-                open ? 'rotate-45 translate-y-2.5 bg-white' : ''
+                open ? 'rotate-45 translate-y-2.5 bg-[#FFFFF7]' : ''
               }`}
             />
             <span
               className={`h-[3px]  w-full bg-black rounded-lg transform transition duration-300 ease-in-out ${
-                open ? '-rotate-45 -translate-y-2.5 mt-1 bg-white' : ''
+                open ? '-rotate-45 -translate-y-2.5 mt-1 bg-[#FFFFF7]' : ''
               }`}
             />
           </div>

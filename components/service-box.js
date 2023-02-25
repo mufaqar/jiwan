@@ -23,7 +23,7 @@ export default function ServiceBox() {
             onClick={() => HandleOpen(1)}
           >
             <div
-              className={`pt-[2px] transition-all duration-300 bg-[#1A4781] ${
+              className={`pt-[1px]  bg-[#000] ${
                 openService === 1 ? 'md:w-full' : 'w-0'
               } `}
             ></div>

@@ -44,7 +44,7 @@ export default function Home({
             <Link href="/insights">
               <a className="md:text-[14px] text-[11px] text-[#1A4782] underline flex space-x-7 items-center">
                 SEE MORE INSIGHTS
-                <span className="pl-[10px]">
+                <span className="pl-[5px]">
                   <AiOutlinePlus />
                 </span>
               </a>
