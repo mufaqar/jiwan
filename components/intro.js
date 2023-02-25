@@ -8,7 +8,7 @@ export default function Intro() {
       <section className="py-14 flex md:pt-14 pt-0 min-h-screen mt-[100px]">
         <div className="container mx-auto grid md:grid-cols-2 grid-cols-1 md:gap-0 gap-9 items-center">
           <div className="md:order-first order-last md:px-0 px-4">
-            <h2 className="lg:text-[64px] md:leading-[64px] md:text-[54px] text-[36px] leading-[36px] font-ITCGaramondStdLight tracking-tighter capitalize">
+            <h2 className="lg:text-[64px] md:leading-[64px] md:text-[54px] text-[36px] leading-[36px] font-ITCGaramondLightCondensed tracking-tighter capitalize">
               What does your business <br></br>
               <span>buy you?</span>
             </h2>
