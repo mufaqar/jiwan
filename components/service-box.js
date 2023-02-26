@@ -38,7 +38,7 @@ export default function ServiceBox() {
               <figure className="relative ">
                 <Image src={Textation} alt="" width={42} height={42}></Image>
                 {openService === 1 && (
-                  <div className="absolute bg-[#1A4781] top-0 right-0 left-0 bottom-1"></div>
+                  <div className="service_active_image_active"></div>
                 )}
               </figure>
             </div>
@@ -222,7 +222,7 @@ export default function ServiceBox() {
               <figure className="relative ">
                 <Image src={Accounting} alt="" width={42} height={42}></Image>
                 {openService === 2 && (
-                  <div className="absolute bg-[#1A4781] top-0 right-0 left-0 bottom-1"></div>
+                  <div className="service_active_image_active"></div>
                 )}
               </figure>
             </div>
@@ -463,7 +463,7 @@ export default function ServiceBox() {
               <figure className="relative ">
                 <Image src={Assurance} alt="" width={42} height={42}></Image>
                 {openService === 3 && (
-                  <div className="absolute bg-[#1A4781] top-0 right-0 left-0 bottom-1"></div>
+                  <div className="service_active_image_active"></div>
                 )}
               </figure>
             </div>
@@ -529,7 +529,7 @@ export default function ServiceBox() {
               <figure className="relative ">
                 <Image src={Consulting} alt="" width={42} height={42}></Image>
                 {openService === 4 && (
-                  <div className="absolute bg-[#1A4781] top-0 right-0 left-0 bottom-1"></div>
+                  <div className="service_active_image_active"></div>
                 )}
               </figure>
             </div>
