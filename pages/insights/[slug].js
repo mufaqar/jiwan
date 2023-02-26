@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import OwnImage from '../../components/OwnImage';
 import {
   FaEnvelope,
@@ -7,13 +6,11 @@ import {
   FaLinkedinIn,
   FaTwitter,
 } from 'react-icons/fa';
-import Link from 'next/link';
 import RelatedBlog from '../../components/related-blog';
 import { client, sanityClient } from '../../lib/client';
 import PortableText from 'react-portable-text';
 import { useRef, useState } from 'react';
 import { useEffect } from 'react';
-import Router from 'next/router';
 import { gql } from '@apollo/client';
 
 export default function SingleArticle({ allinsights, insight }) {
