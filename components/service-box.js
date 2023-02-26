@@ -37,9 +37,7 @@ export default function ServiceBox() {
               </h2>
               <figure className="relative ">
                 <Image src={Textation} alt="" width={42} height={42}></Image>
-                {openService === 1 && (
-                  <div className="service_active_image_active"></div>
-                )}
+                  <div className={`service_active_image_active transition-all duration-500 ease-in-out opacity-0 ${openService === 1 && 'opacity-100'}`}></div>
               </figure>
             </div>
           </summary>
@@ -219,13 +217,11 @@ export default function ServiceBox() {
               >
                 Accounting
               </h2>
-              <figure className="relative group-hover:hidden">
+              <figure className="relative ">
                 <Image src={Accounting} alt="" width={42} height={42}></Image>
-                {openService === 2 && (
-                  <div className="service_active_image_active"></div>
-                )}
+                <div className={`service_active_image_active transition-all duration-500 ease-in-out opacity-0 ${openService === 2 && 'opacity-100'}`}></div>
               </figure>
-              <div className="bg-[#1A4781] min-w-[42px] hidden group-hover:block min-h-[42px]"></div>
+              
             </div>
           </summary>
           <div className={`mt-5 ${openService === 2 ? 'block' : 'hidden'}`}>
@@ -461,13 +457,11 @@ export default function ServiceBox() {
               >
                 Assurance
               </h2>
-              <figure className="relative group-hover:hidden">
+              <figure className="relative ">
                 <Image src={Assurance} alt="" width={42} height={42}></Image>
-                {openService === 3 && (
-                  <div className="service_active_image_active"></div>
-                )}
+                <div className={`service_active_image_active transition-all duration-500 ease-in-out opacity-0 ${openService === 3 && 'opacity-100'}`}></div>
               </figure>
-              <div className="bg-[#1A4781] min-w-[42px] hidden group-hover:block min-h-[42px]"></div>
+              
             </div>
           </summary>
           <div
@@ -528,13 +522,11 @@ export default function ServiceBox() {
               >
                 Consulting
               </h2>
-              <figure className="relative group-hover:hidden">
+              <figure className="relative ">
                 <Image src={Consulting} alt="" width={42} height={42}></Image>
-                {openService === 4 && (
-                  <div className="service_active_image_active"></div>
-                )}
+                <div className={`service_active_image_active transition-all duration-500 ease-in-out opacity-0 ${openService === 4 && 'opacity-100'}`}></div>
               </figure>
-              <div className="bg-[#1A4781] min-w-[42px] hidden group-hover:block min-h-[42px]"></div>
+              
             </div>
           </summary>
           <div className={`mt-5 ${openService === 4 ? 'block' : 'hidden'}`}>
