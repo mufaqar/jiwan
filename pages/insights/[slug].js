@@ -12,6 +12,7 @@ import PortableText from 'react-portable-text';
 import { useRef, useState } from 'react';
 import { useEffect } from 'react';
 import { gql } from '@apollo/client';
+import {RiArrowUpSLine, RiArrowDownSLine} from 'react-icons/ri'
 
 export default function SingleArticle({ allinsights, insight }) {
   var date = new Date(insight.date);
@@ -28,6 +29,11 @@ export default function SingleArticle({ allinsights, insight }) {
       setDomainName(window.origin);
     }
   }, []);
+  const [open, setOpen] = useState(false)
+  const handleOpenShare = () =>{
+    setOpen(!open)
+  }
+
   return (
     <main>
       <section className="py-10 mt-[124px]">
@@ -60,8 +66,12 @@ export default function SingleArticle({ allinsights, insight }) {
               <p className="text-[13px]">{fdate}</p>
               <div className="socials">
                 <details className="">
-                  <summary className="after:content-['_^'] text-right text-[13px]">
+                  <summary className="text-right text-[13px] flex justify-end cursor-pointer items-center gap-1" onClick={handleOpenShare}>
                     SHARE
+                    {
+                    open ? <RiArrowDownSLine size={20}/> : <RiArrowUpSLine size={20}/>
+                    }
+                    
                   </summary>
                   <div className="mt-2">
                     <ul className="flex space-x-2">

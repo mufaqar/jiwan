@@ -19,11 +19,11 @@ export default function ServiceBox() {
       <div className="services Textation">
         <details className="border-y border-black md:border-transparent open:border-y  md:mb-12 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
           <summary
-            className="cursor-pointer  items-center gap-4"
+            className="cursor-pointer group items-center gap-4"
             onClick={() => HandleOpen(1)}
           >
             <div
-              className={`service_heading_border ${
+              className={`service_heading_border  ${
                 openService === 1 ? 'md:w-full' : 'w-0'
               } `}
             ></div>
@@ -35,12 +35,13 @@ export default function ServiceBox() {
               >
                 Taxation
               </h2>
-              <figure className="relative ">
+              <figure className="relative group-hover:hidden">
                 <Image src={Textation} alt="" width={42} height={42}></Image>
                 {openService === 1 && (
                   <div className="service_active_image_active"></div>
                 )}
               </figure>
+              <div className="bg-[#1A4781] min-w-[42px] hidden group-hover:block min-h-[42px]"></div>
             </div>
           </summary>
           <div
@@ -203,7 +204,7 @@ export default function ServiceBox() {
       <div className="services Accounting">
         <details className="border-b border-black md:border-transparent open:border-b  md:mb-12 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
           <summary
-            className="cursor-pointer  items-center gap-4"
+            className="cursor-pointer group items-center gap-4"
             onClick={() => HandleOpen(2)}
           >
             <div
@@ -219,12 +220,13 @@ export default function ServiceBox() {
               >
                 Accounting
               </h2>
-              <figure className="relative ">
+              <figure className="relative group-hover:hidden">
                 <Image src={Accounting} alt="" width={42} height={42}></Image>
                 {openService === 2 && (
                   <div className="service_active_image_active"></div>
                 )}
               </figure>
+              <div className="bg-[#1A4781] min-w-[42px] hidden group-hover:block min-h-[42px]"></div>
             </div>
           </summary>
           <div className={`mt-5 ${openService === 2 ? 'block' : 'hidden'}`}>
@@ -444,7 +446,7 @@ export default function ServiceBox() {
       <div className="services Assurance">
         <details className="border-b border-black md:border-transparent open:border-b  md:mb-12 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
           <summary
-            className="cursor-pointer  items-center gap-4"
+            className="cursor-pointer group items-center gap-4"
             onClick={() => HandleOpen(3)}
           >
             <div
@@ -460,12 +462,13 @@ export default function ServiceBox() {
               >
                 Assurance
               </h2>
-              <figure className="relative ">
+              <figure className="relative group-hover:hidden">
                 <Image src={Assurance} alt="" width={42} height={42}></Image>
                 {openService === 3 && (
                   <div className="service_active_image_active"></div>
                 )}
               </figure>
+              <div className="bg-[#1A4781] min-w-[42px] hidden group-hover:block min-h-[42px]"></div>
             </div>
           </summary>
           <div
@@ -509,7 +512,7 @@ export default function ServiceBox() {
       <div className="services Consulting">
         <details className="border-b border-black md:border-transparent open:border-b  md:mb-14 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
           <summary
-            className="cursor-pointer items-center gap-4"
+            className="cursor-pointer group items-center gap-4"
             onClick={() => HandleOpen(4)}
           >
             <div
@@ -526,12 +529,13 @@ export default function ServiceBox() {
               >
                 Consulting
               </h2>
-              <figure className="relative ">
+              <figure className="relative group-hover:hidden">
                 <Image src={Consulting} alt="" width={42} height={42}></Image>
                 {openService === 4 && (
                   <div className="service_active_image_active"></div>
                 )}
               </figure>
+              <div className="bg-[#1A4781] min-w-[42px] hidden group-hover:block min-h-[42px]"></div>
             </div>
           </summary>
           <div className={`mt-5 ${openService === 4 ? 'block' : 'hidden'}`}>
