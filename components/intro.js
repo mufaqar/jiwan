@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import IntroImg from '../public/images/introImg.webp';
-import MblIntro from '../public/images/mblintro.png';
+import IntroImg from '../public/images/banner-desktop.webp';
+import MblIntro from '../public/images/banner-mobile.webp';
 
 export default function Intro() {
   return (
