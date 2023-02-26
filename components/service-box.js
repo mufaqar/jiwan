@@ -23,7 +23,7 @@ export default function ServiceBox() {
             onClick={() => HandleOpen(1)}
           >
             <div
-              className={`pt-[1px]  bg-[#000] ${
+              className={`service_heading_border ${
                 openService === 1 ? 'md:w-full' : 'w-0'
               } `}
             ></div>
@@ -194,7 +194,7 @@ export default function ServiceBox() {
           </div>
         </details>
         <div
-          className={`pt-[2px] transition-all duration-300 bg-[#1A4781] ${
+          className={`service_heading_border ${
             openService === 1 ? 'md:w-full' : 'w-0'
           } `}
         ></div>
@@ -207,7 +207,7 @@ export default function ServiceBox() {
             onClick={() => HandleOpen(2)}
           >
             <div
-              className={`pt-[2px] transition-all duration-300 bg-[#1A4781] ${
+              className={`service_heading_border ${
                 openService === 2 ? 'md:w-full' : 'w-0'
               } `}
             ></div>
@@ -435,7 +435,7 @@ export default function ServiceBox() {
         </details>
 
         <div
-          className={`pt-[2px] transition-all duration-300 bg-[#1A4781] ${
+          className={`service_heading_border ${
             openService === 2 ? 'md:w-full' : 'w-0'
           } `}
         ></div>
@@ -448,7 +448,7 @@ export default function ServiceBox() {
             onClick={() => HandleOpen(3)}
           >
             <div
-              className={`pt-[2px] transition-all duration-300 bg-[#1A4781] ${
+              className={`service_heading_border ${
                 openService === 3 ? 'md:w-full' : 'w-0'
               } `}
             ></div>
@@ -500,7 +500,7 @@ export default function ServiceBox() {
         </details>
 
         <div
-          className={`pt-[2px] transition-all duration-300 bg-[#1A4781] ${
+          className={`service_heading_border ${
             openService === 3 ? 'md:w-full' : 'w-0'
           } `}
         ></div>
@@ -513,7 +513,7 @@ export default function ServiceBox() {
             onClick={() => HandleOpen(4)}
           >
             <div
-              className={`pt-[2px] transition-all duration-300 bg-[#1A4781] ${
+              className={`service_heading_border ${
                 openService === 4 ? 'md:w-full' : 'w-0'
               } `}
             ></div>
@@ -613,7 +613,7 @@ export default function ServiceBox() {
           </div>
         </details>
         <div
-          className={`pt-[2px] transition-all duration-300 bg-[#1A4781] ${
+          className={`service_heading_border ${
             openService === 4 ? 'md:w-full' : 'w-0'
           } `}
         ></div>
