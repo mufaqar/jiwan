@@ -45,7 +45,7 @@ export default function Navbar() {
         <div
           className={`lg:hidden absolute top-0 left-0  h-screen w-screen z-50 bg-gradient-to-bl to-[#1B4582] from-[#BBC5D1] transform ${
             open ? '-translate-x-0' : '-translate-x-full'
-          } transition-transform duration-300 ease-in-out  `}
+          } transition-transform duration-300 ease-in-out animatedGradient  `}
         >
           <div
             className="flex items-center justify-center mx-auto h-24 px-20 pl-[5.2rem]"
