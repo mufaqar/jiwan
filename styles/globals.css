@@ -54,7 +54,7 @@
   }
 
   .mobilemenu_link {
-    @apply mx-4 lg:font-ABCFavoritEdu font-ITCGaramondLightCondensed;
+    @apply mx-4 lg:font-ABCFavoritEdu font-ITCGaramondLightCondensed tracking-[2px];
   }
 }
 body {
