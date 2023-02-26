@@ -33,7 +33,7 @@
     @apply lg:text-[65px] lg:leading-[78px] md:text-[56px] md:leading-[67px] text-[36px] leading-[43px] font-ITCGaramondLightCondensed tracking-tighter mr-5 open:italic hover:text-[#1A4782];
   }
   .case_slider_heading {
-    @apply font-ITCGaramondLightCondensed lg:text-[56px] lg:leading-[60px] md:text-[50px] text-[42px] leading-[47px] tracking-tighter max-w-[30rem];
+    @apply font-ITCGaramondLightCondensed lg:text-[56px] lg:leading-[60px] md:text-[50px] text-[42px] leading-[47px] tracking-tighter max-w-[30rem] min-h-[120px];
   }
   .case_study_details {
     @apply md:text-[21px] text-[18px] font-ITCGaramondLightCondensed;
