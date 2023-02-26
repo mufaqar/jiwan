@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import IntroImg from '../public/images/introImg.png';
+import IntroImg from '../public/images/introImg.webp';
 import MblIntro from '../public/images/mblintro.png';
 
 export default function Intro() {
