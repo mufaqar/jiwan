@@ -14,14 +14,22 @@ import { useEffect } from 'react';
 import { gql } from '@apollo/client';
 
 export default function SingleArticle({ allinsights, insight }) {
-  const [domainName, setDomainName] = useState('');
+  var date = new Date(insight.date);
 
+  var fdate = date.toLocaleDateString('en-us', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  });
+  console.log(fdate);
+
+  const [domainName, setDomainName] = useState('');
   useEffect(() => {
     if (typeof window !== 'undefined') {
       setDomainName(window.origin);
     }
   }, []);
-
   return (
     <main>
       <section className="py-10 mt-[124px]">
@@ -51,7 +59,7 @@ export default function SingleArticle({ allinsights, insight }) {
 
           <div className="md:max-w-[815px] mx-auto md:px-0 px-4">
             <div className="flex justify-between">
-              <p className="text-[13px]">{insight?.date}</p>
+              <p className="text-[13px]">{fdate}</p>
               <div className="socials">
                 <details className="">
                   <summary className="after:content-['_^'] text-right text-[13px]">
