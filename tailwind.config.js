@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         AdobCaslonRegular: ['Adobe-Caslon-Pro-Regular', 'sans-serif'],
+        ABCFavoritEdu: ['ABCFavoritEdu', 'sans-serif'],
         ITCGaramondLightCondensed: ['ITCGaramondLightCondensed', 'sans-serif'],
         ITCGaramondLightCondensedItalic: [
           'ITCGaramondLightCondensedItalic',

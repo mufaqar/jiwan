@@ -7,7 +7,7 @@ import WhiteLogo from '../public/images/whiteLogo.svg';
 
 function NavLink({ to, children }) {
   return (
-    <a href={to} className={`mx-4 font-abc-fav`}>
+    <a href={to} className={`mobilemenu_link`}>
       {children}
     </a>
   );
@@ -48,7 +48,7 @@ export default function Navbar() {
           } transition-transform duration-300 ease-in-out  `}
         >
           <div
-            className="flex items-center justify-center mx-auto h-24 px-20"
+            className="flex items-center justify-center mx-auto h-24 px-20 pl-[5.2rem]"
             onClick={() => setOpen(false)}
           >
             {' '}
@@ -86,7 +86,7 @@ export default function Navbar() {
           </div>
 
           <div
-            className="z-50  flex relative w-8 h-6 flex-col gap-2 items-center lg:hidden"
+            className="z-50  flex relative w-6 h-6 flex-col gap-[12px] items-center lg:hidden"
             onClick={() => {
               setOpen(!open);
             }}

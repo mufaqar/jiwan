@@ -52,6 +52,10 @@
   .service_active_image_active {
     @apply absolute bg-[#1A4781] top-0 right-0 left-0 bottom-1;
   }
+
+  .mobilemenu_link {
+    @apply mx-4 font-ITCGaramondLightCondensed;
+  }
 }
 body {
   background-color: #fffff7;
