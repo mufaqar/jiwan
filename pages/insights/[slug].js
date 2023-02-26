@@ -12,7 +12,7 @@ import PortableText from 'react-portable-text';
 import { useRef, useState } from 'react';
 import { useEffect } from 'react';
 import { gql } from '@apollo/client';
-import {RiArrowUpSLine, RiArrowDownSLine} from 'react-icons/ri'
+import { RiArrowUpSLine, RiArrowDownSLine } from 'react-icons/ri';
 
 export default function SingleArticle({ allinsights, insight }) {
   var date = new Date(insight.date);
@@ -29,22 +29,22 @@ export default function SingleArticle({ allinsights, insight }) {
       setDomainName(window.origin);
     }
   }, []);
-  const [open, setOpen] = useState(false)
-  const handleOpenShare = () =>{
-    setOpen(!open)
-  }
+  const [open, setOpen] = useState(false);
+  const handleOpenShare = () => {
+    setOpen(!open);
+  };
 
   return (
     <main>
       <section className="py-10 mt-[124px]">
         <div className="container mx-auto">
           <div className="md:max-w-[815px] mx-auto md:px-0 px-4 mb-10">
-            <h2 className="font-ITCGaramondLightCondensed tracking-tighter md:text-[56px] md:leading-[56px] text-[38px] leading-[41px] mb-3">
+            <h2 className="font-ITCGaramondLightCondensed  md:text-[56px] md:leading-[56px] text-[38px] leading-[41px] mb-3">
               {insight?.title}
             </h2>
 
             <div
-              className="font-ITCGaramondLightCondensed tracking-tighter md:text-[25px] md:leading-[28px] text-[22px] leading-[25px]"
+              className="font-ITCGaramondLightCondensed  md:text-[25px] md:leading-[28px] text-[22px] leading-[25px] blog-single"
               dangerouslySetInnerHTML={{
                 __html: insight?.excerpt,
               }}
@@ -66,12 +66,16 @@ export default function SingleArticle({ allinsights, insight }) {
               <p className="text-[13px]">{fdate}</p>
               <div className="socials">
                 <details className="">
-                  <summary className="text-right text-[13px] flex justify-end cursor-pointer items-center gap-1" onClick={handleOpenShare}>
+                  <summary
+                    className="text-right text-[13px] flex justify-end cursor-pointer items-center gap-1"
+                    onClick={handleOpenShare}
+                  >
                     SHARE
-                    {
-                    open ? <RiArrowDownSLine size={20}/> : <RiArrowUpSLine size={20}/>
-                    }
-                    
+                    {open ? (
+                      <RiArrowDownSLine size={20} />
+                    ) : (
+                      <RiArrowUpSLine size={20} />
+                    )}
                   </summary>
                   <div className="mt-2">
                     <ul className="flex space-x-2">

@@ -68,6 +68,10 @@ body {
   font-family: 'ABCFavoritMono';
 }
 
+.blog-single p {
+  font-family: 'ITCGaramondLightCondensed' !important;
+}
+
 .thinkness {
   text-decoration-line: underline;
   text-decoration-thickness: 3px;
