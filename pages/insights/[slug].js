@@ -17,13 +17,11 @@ export default function SingleArticle({ allinsights, insight }) {
   var date = new Date(insight.date);
 
   var fdate = date.toLocaleDateString('en-us', {
-    weekday: 'long',
     year: 'numeric',
     month: 'short',
     day: 'numeric',
   });
   console.log(fdate);
-
   const [domainName, setDomainName] = useState('');
   useEffect(() => {
     if (typeof window !== 'undefined') {
