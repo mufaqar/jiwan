@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="container mx-auto items-center grid gap-10 md:gap-16 p-4">
           <div>
             <h2 className="lg:text-[65px] md:leading-[70px] md:text-[53px] text-4xl font-ITCGaramondLightCondensed tracking-tighter text-white">
-              <span className="underline">Reach out</span> & discover what your
+              <span className="thinkness">Reach out</span> & discover what your
               business can buy you.{' '}
             </h2>
           </div>

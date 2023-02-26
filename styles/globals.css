@@ -64,6 +64,11 @@ body {
   font-family: 'ABCFavoritMono';
 }
 
+.thinkness {
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+}
+
 h1,
 h2,
 h3,
