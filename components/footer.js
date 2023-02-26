@@ -6,7 +6,7 @@ export default function Footer() {
       <footer className="animatedGradient md:bg-black md:py-10 pb-0 pt-9 mt-16">
         <div className="container mx-auto items-center grid gap-10 md:gap-16 p-4">
           <div>
-            <h2 className="lg:text-[65px] md:leading-[70px] md:text-[53px] text-4xl font-ITCGaramondStdLight tracking-tighter text-white">
+            <h2 className="lg:text-[65px] md:leading-[70px] md:text-[53px] text-4xl font-ITCGaramondLightCondensed tracking-tighter text-white">
               <span className="underline">Reach out</span> & discover what your
               business can buy you.{' '}
             </h2>
@@ -45,7 +45,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className="grid gap-3 md:gap-[2.2rem] mb-3 md:mb-0  md:col-span-1 col-span-2 md:order-first order-last">
-              <h2 className="font-ITCGaramondStdLight mt-8 md:mt-0 tracking-tighter md:text-[27px] text-[22px] md:text-center text-white">
+              <h2 className="font-ITCGaramondLightCondensed mt-8 md:mt-0 tracking-tighter md:text-[27px] text-[22px] md:text-center text-white">
                 © Jiwan Dhillon & Company CPA
               </h2>
               <p className="order-first md:order-2 font-AdobCaslonRegular md:text-base text-xs text-left md:text-center text-white">

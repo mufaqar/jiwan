@@ -32,7 +32,7 @@ const SimpleSlider = ({ casestudy }) => {
                 <div className="grid justify-around gap-10 px-8 py-5 sm:grid-cols-2 md:grid-cols-3 grid-col-1 lg:flex md:p-0 md:border-y-0 border-y border-black/70">
                   {slide?.caseStudy?.stats?.map((profit, index) => (
                     <div className="text-center" key={index}>
-                      <h2 className="font-ITCGaramondStdLight md:text-[42px] md:leading-[50px] text-[34px] tracking-tighter">
+                      <h2 className="font-ITCGaramondLightCondensed md:text-[42px] md:leading-[50px] text-[34px] tracking-tighter">
                         {profit?.amountAndPersontage}
                       </h2>
                       <p className="md:text-[13px] text-[9px] text-[#1A4782] max-w-[241px] mx-auto">

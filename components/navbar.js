@@ -59,7 +59,7 @@ export default function Navbar() {
               </a>
             </Link>
           </div>
-          <div className="flex flex-col gap-10 text-white mt-16 font-ITCGaramondStdLight text-[40px]">
+          <div className="flex flex-col gap-10 text-white mt-16 font-ITCGaramondLightCondensed text-[40px]">
             <div onClick={() => setOpen(false)}>
               <NavLink to="/case-studies">Case Studies</NavLink>
             </div>

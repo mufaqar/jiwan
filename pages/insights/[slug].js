@@ -30,12 +30,12 @@ export default function SingleArticle({ allinsights, insight }) {
       <section className="py-10 mt-[124px]">
         <div className="container mx-auto">
           <div className="md:max-w-[815px] mx-auto md:px-0 px-4 mb-10">
-            <h2 className="font-ITCGaramondStdLight tracking-tighter md:text-[56px] md:leading-[56px] text-[38px] leading-[41px] mb-3">
+            <h2 className="font-ITCGaramondLightCondensed tracking-tighter md:text-[56px] md:leading-[56px] text-[38px] leading-[41px] mb-3">
               {insight?.title}
             </h2>
 
             <div
-              className="font-ITCGaramondStdLight tracking-tighter md:text-[25px] md:leading-[28px] text-[22px] leading-[25px]"
+              className="font-ITCGaramondLightCondensed tracking-tighter md:text-[25px] md:leading-[28px] text-[22px] leading-[25px]"
               dangerouslySetInnerHTML={{
                 __html: insight?.excerpt,
               }}
@@ -125,7 +125,7 @@ export default function SingleArticle({ allinsights, insight }) {
       <section className="py-10 ">
         <div className="container mx-auto">
           <div className="md:max-w-[815px] mx-auto md:px-0 px-4">
-            <h2 className="font-ITCGaramondStdLight tracking-tighter md:text-[36px] leading-[21px] text-[31px] border-b border-black pb-4 mb-3">
+            <h2 className="font-ITCGaramondLightCondensed tracking-tighter md:text-[36px] leading-[21px] text-[31px] border-b border-black pb-4 mb-3">
               READ MORE
             </h2>
             <div>
