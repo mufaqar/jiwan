@@ -36,7 +36,7 @@
     @apply font-ITCGaramondLightCondensed lg:text-[56px] lg:leading-[60px] md:text-[50px] text-[42px] leading-[47px] tracking-tighter max-w-[30rem];
   }
   .case_study_details {
-    @apply md:text-[21px] text-[18px] font-ITCGaramondLightCondensed tracking-tighter;
+    @apply md:text-[21px] text-[18px] font-ITCGaramondLightCondensed;
   }
   .servic_list_title {
     @apply md:text-[13px] text-xs flex justify-between border-y border-black/30 py-2;
