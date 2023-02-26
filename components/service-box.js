@@ -35,13 +35,12 @@ export default function ServiceBox() {
               >
                 Taxation
               </h2>
-              <figure className="relative group-hover:hidden">
+              <figure className="relative ">
                 <Image src={Textation} alt="" width={42} height={42}></Image>
                 {openService === 1 && (
                   <div className="service_active_image_active"></div>
                 )}
               </figure>
-              <div className="bg-[#1A4781] min-w-[42px] hidden group-hover:block min-h-[42px]"></div>
             </div>
           </summary>
           <div
