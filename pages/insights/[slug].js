@@ -19,7 +19,7 @@ export default function SingleArticle({ allinsights, insight }) {
 
   var fdate = date.toLocaleDateString('en-us', {
     year: 'numeric',
-    month: 'short',
+    month: 'long',
     day: 'numeric',
   });
   console.log(fdate);
@@ -63,7 +63,7 @@ export default function SingleArticle({ allinsights, insight }) {
 
           <div className="md:max-w-[815px] mx-auto md:px-0 px-4">
             <div className="flex justify-between">
-              <p className="text-[13px]">{fdate}</p>
+              <p className="text-[13px] uppercase">{fdate}</p>
               <div className="socials">
                 <details className="">
                   <summary
