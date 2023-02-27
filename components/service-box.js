@@ -360,30 +360,31 @@ export default function ServiceBox() {
                 <ul className="mb-10">
                   <li className="servic_list_title">
                     <span>Trust returns</span>
-                    <span className="w-1/4 flex justify-between">
-                      <span>From</span>
-                      <span className="price">$1,000</span>
+
+                    <span className="price">
+                      <span className="from">From</span> $1,000
                     </span>
                   </li>
                   <li className="servic_list_title2">
                     <span>Amalgamations and Wind Ups</span>
-                    <span className="w-1/4 flex justify-between">
-                      <span>From</span>
-                      <span className="price">$6,000</span>
+
+                    <span className="price">
+                      {' '}
+                      <span className="from">From</span> $6,000
                     </span>
                   </li>
                   <li className="servic_list_title2">
                     <span>Corporate Reorganizations</span>
-                    <span className="w-1/4 flex justify-between">
-                      <span>From</span>
-                      <span className="price">$6,000</span>
+
+                    <span className="price">
+                      <span className="from">From</span> $6,000
                     </span>
                   </li>
                   <li className="servic_list_title2">
                     <span>Asset transfers</span>
-                    <span className="w-1/4 flex justify-between">
-                      <span>From</span>
-                      <span className="price">$6,000</span>
+
+                    <span className="price">
+                      <span className="from">From</span> $6,000
                     </span>
                   </li>
                   <li className="servic_list_title2">
@@ -551,30 +552,30 @@ export default function ServiceBox() {
                 <ul className="mb-5">
                   <li className="servic_list_title">
                     <span>Strategic and Operational Plans</span>
-                    <span className="w-1/4 flex justify-between">
-                      <span>From</span>
-                      <span className="price">$5,000</span>
+
+                    <span className="price">
+                      <span className="from">From </span>$5,000
                     </span>
                   </li>
                   <li className="servic_list_title2">
                     <span>Business plans</span>
-                    <span className="w-1/4 flex justify-between">
-                      <span>From</span>
-                      <span className="price">$2,500</span>
+
+                    <span className="price">
+                      <span className="from">From</span> $2,500
                     </span>
                   </li>
                   <li className="servic_list_title2">
                     <span>Busines valuations</span>
-                    <span className="w-1/4 flex justify-between">
-                      <span>From</span>
-                      <span className="price">$2,500</span>
+
+                    <span className="price">
+                      <span className="from">From</span> $2,500
                     </span>
                   </li>
                   <li className="servic_list_title2">
                     <span>Financial projections</span>
-                    <span className="w-1/4 flex justify-between">
-                      <span>From</span>
-                      <span className="price">$2,500</span>
+
+                    <span className="price">
+                      <span className="from">From</span> $2,500
                     </span>
                   </li>
                   <li className="servic_list_title2">

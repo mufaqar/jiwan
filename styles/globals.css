@@ -39,10 +39,10 @@
     @apply md:text-[21px] text-[18px] font-ITCGaramondLightCondensed;
   }
   .servic_list_title {
-    @apply md:text-[13px] text-xs flex justify-between border-y border-black/30 py-2;
+    @apply md:text-[13px] text-xs flex justify-between border-y border-black/30 py-2 font-ABCFavoritEdu;
   }
   .servic_list_title2 {
-    @apply md:text-[13px] text-xs flex justify-between border-b border-black/30 py-2;
+    @apply md:text-[13px] text-xs flex justify-between border-b border-black/30 py-2 font-ABCFavoritEdu;
   }
 
   .service_heading_border {
@@ -104,6 +104,10 @@ summary::marker {
 .servic_list_title2 .price,
 .servic_list_title .price {
   font-family: 'ABCFavoritMono' !important;
+}
+
+.price .from {
+  font-family: 'ABCFavoritEdu' !important;
 }
 
 .services summary figure::after {
