@@ -46,7 +46,7 @@
   }
 
   .service_heading_border {
-    @apply pt-[1px]  bg-[#000];
+    @apply pt-[1px]  lg:bg-[#000];
   }
 
   .service_active_image_active {
