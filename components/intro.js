@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import IntroImg from '../public/images/banner-desktop.webp';
-import MblIntro from '../public/images/banner-mobile.webp';
+import IntroImg from '../public/images/Jiwan-Dhillon-Company-Surrey-Accountants-Hero-Desktop.webp';
+import MblIntro from '../public/images/Jiwan-Dhillon-Company-Surrey-Accountants-Hero-Mobile.webp';
 
 export default function Intro() {
   return (
