@@ -554,7 +554,7 @@ export default function ServiceBox() {
                     <span>Strategic and Operational Plans</span>
 
                     <span className="price">
-                      <span className="from">From </span>$5,000
+                      <span className="from">From </span> $5,000
                     </span>
                   </li>
                   <li className="servic_list_title2">
