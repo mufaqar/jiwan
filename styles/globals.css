@@ -50,7 +50,7 @@
   }
 
   .service_active_image_active {
-    @apply absolute  bg-[#1A4781] top-0 right-0 left-0 bottom-1;
+    @apply absolute  bg-[#1A4781] top-0 right-0 left-0 bottom-[0.3rem];
   }
 
   .mobilemenu_link {

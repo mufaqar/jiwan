@@ -4,6 +4,9 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import Logo from '../public/images/logo.svg';
 import WhiteLogo from '../public/images/whiteLogo.svg';
+import mobile_back from '../public/images/mbile-icon-back.svg';
+import mobile_white from '../public/images/mbile-icon-white.svg';
+import mobile_close from '../public/images/mbile-icon-white.svg';
 
 function NavLink({ to, children }) {
   return (
@@ -86,22 +89,17 @@ export default function Navbar() {
           </div>
 
           <div
-            className="z-50  flex relative w-6 h-6 flex-col gap-[12px] items-center lg:hidden"
+            className="z-50  flex relative flex-col justify-center items-center lg:hidden"
             onClick={() => {
               setOpen(!open);
             }}
           >
             {/* hamburger button */}
-            <span
-              className={`h-[3px]  w-full bg-black rounded-lg transform transition duration-300 ease-in-out ${
-                open ? 'rotate-45 translate-y-2.5 bg-[#FFFFF7]' : ''
-              }`}
-            />
-            <span
-              className={`h-[3px]  w-full bg-black rounded-lg transform transition duration-300 ease-in-out ${
-                open ? '-rotate-45 -translate-y-2.5 mt-1 bg-[#FFFFF7]' : ''
-              }`}
-            />
+            <Image
+              src={open ? mobile_close : mobile_back}
+              alt=""
+              className=""
+            ></Image>
           </div>
 
           <div className="md:w-6/12 w-8/12 mx-auto flex items-center justify-center  lg:px-28">

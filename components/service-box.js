@@ -36,8 +36,12 @@ export default function ServiceBox() {
                 Taxation
               </h2>
               <figure className="relative ">
-                <Image src={Textation} alt="" width={42} height={42}></Image>
-                  <div className={`service_active_image_active transition-all duration-500 ease-in-out opacity-0 ${openService === 1 && 'opacity-100'}`}></div>
+                <Image src={Textation} alt="" width={48} height={48}></Image>
+                <div
+                  className={`service_active_image_active transition-all duration-500 ease-in-out opacity-0 ${
+                    openService === 1 && 'opacity-100'
+                  }`}
+                ></div>
               </figure>
             </div>
           </summary>
@@ -219,9 +223,12 @@ export default function ServiceBox() {
               </h2>
               <figure className="relative ">
                 <Image src={Accounting} alt="" width={42} height={42}></Image>
-                <div className={`service_active_image_active transition-all duration-500 ease-in-out opacity-0 ${openService === 2 && 'opacity-100'}`}></div>
+                <div
+                  className={`service_active_image_active transition-all duration-500 ease-in-out opacity-0 ${
+                    openService === 2 && 'opacity-100'
+                  }`}
+                ></div>
               </figure>
-              
             </div>
           </summary>
           <div className={`mt-5 ${openService === 2 ? 'block' : 'hidden'}`}>
@@ -459,9 +466,12 @@ export default function ServiceBox() {
               </h2>
               <figure className="relative ">
                 <Image src={Assurance} alt="" width={42} height={42}></Image>
-                <div className={`service_active_image_active transition-all duration-500 ease-in-out opacity-0 ${openService === 3 && 'opacity-100'}`}></div>
+                <div
+                  className={`service_active_image_active transition-all duration-500 ease-in-out opacity-0 ${
+                    openService === 3 && 'opacity-100'
+                  }`}
+                ></div>
               </figure>
-              
             </div>
           </summary>
           <div
@@ -524,9 +534,12 @@ export default function ServiceBox() {
               </h2>
               <figure className="relative ">
                 <Image src={Consulting} alt="" width={42} height={42}></Image>
-                <div className={`service_active_image_active transition-all duration-500 ease-in-out opacity-0 ${openService === 4 && 'opacity-100'}`}></div>
+                <div
+                  className={`service_active_image_active transition-all duration-500 ease-in-out opacity-0 ${
+                    openService === 4 && 'opacity-100'
+                  }`}
+                ></div>
               </figure>
-              
             </div>
           </summary>
           <div className={`mt-5 ${openService === 4 ? 'block' : 'hidden'}`}>
