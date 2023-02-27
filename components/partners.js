@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import Partner1 from '../public/images/cpa.svg';
-import Partner2 from '../public/images/ctf.svg';
+import Partner1 from '../public/images/Jiwan-Dhillon-Company-Accountants-Surrey-CPA.svg';
+import Partner2 from '../public/images/Jiwan-Dhillon-Company-Accountants-Surrey-CTF.svg';
 
 export default function Partners() {
   return (
