@@ -82,7 +82,7 @@ h3,
 h4,
 h5,
 h6 {
-  letter-spacing: 1px !important;
+  /* letter-spacing: 1px !important; */
 }
 
 p {
@@ -111,7 +111,7 @@ summary::marker {
   content: '\002B';
   font-size: 20px;
   position: absolute;
-  top: 0;
+  top: 6px;
   right: -70%;
   transform: rotate(0);
   transform-origin: 0.2rem 50%;
