@@ -23,7 +23,7 @@ export default function Home({
     <main>
       <Intro />
 
-      <section className="min-h-screen px-4 py-10">
+      <section className="min-h-screen px-4 py-10" id="case-studies">
         <div className="container mx-auto mb-10">
           <h3 className="text-sm">CASE STUDY</h3>
         </div>

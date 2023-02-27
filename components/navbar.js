@@ -84,7 +84,7 @@ export default function Navbar() {
 
         <div className="w-full flex justify-between items-center">
           <div className="hidden lg:flex justify-between w-3/12 text-xs">
-            <NavLink to="/case-studies">CASE STUDIES</NavLink>
+            <NavLink to="/#case-studies">CASE STUDIES</NavLink>
             <NavLink to="/insights">INSIGHTS</NavLink>
           </div>
 
