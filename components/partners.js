@@ -7,7 +7,7 @@ export default function Partners() {
     <>
       <section className="py-10 px-4 ">
         <div className="container mx-auto">
-          <h3 className="text-sm mb-10">PROFFESIONAL ASSOCIATIONS</h3>
+          <h3 className="mb-10 section_heading">PROFFESIONAL ASSOCIATIONS</h3>
           <div className="grid grid-cols-2 gap-5 md:max-w-[898px] mx-auto">
             <figure>
               <Image src={Partner1} alt="" width={340} height={96}></Image>

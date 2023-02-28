@@ -9,6 +9,7 @@ module.exports = {
       fontFamily: {
         AdobCaslonRegular: ['Adobe-Caslon-Pro-Regular', 'sans-serif'],
         ABCFavoritEdu: ['ABCFavoritEdu', 'sans-serif'],
+        ABCFavoritLiningEdu: ['ABCFavoritLiningEdu', 'sans-serif'],
         ITCGaramondLightCondensed: ['ITCGaramondLightCondensed', 'sans-serif'],
         ITCGaramondLightCondensedItalic: [
           'ITCGaramondLightCondensedItalic',

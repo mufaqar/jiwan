@@ -25,14 +25,14 @@ export default function Home({
 
       <section className="min-h-screen px-4 py-10" id="case-studies">
         <div className="container mx-auto mb-10">
-          <h3 className="text-sm">CASE STUDY</h3>
+          <h3 className="section_heading">CASE STUDY</h3>
         </div>
         <CaseStudy casestudy={casestudy} />
       </section>
 
       <section className="px-4 py-10">
         <div className="container mx-auto mb-10">
-          <h3 className="text-sm">INSIGHTS</h3>
+          <h3 className="section_heading">INSIGHTS</h3>
         </div>
         <div className="container items-center mx-auto">
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
@@ -55,7 +55,7 @@ export default function Home({
 
       <section id="services" className="px-0 py-10 md:px-4">
         <div className="container mx-auto ">
-          <h3 className="px-4 mb-5 text-sm md:px-0">SERVICES</h3>
+          <h3 className="px-4 mb-5  md:px-0 section_heading">SERVICES</h3>
           <div className="grid grid-cols-1 md:grid-cols-4 md:gap-10">
             <div className="hidden md:block">
               <p className="text-sm max-w-[183px]">

@@ -33,6 +33,11 @@ html {
   src: url('../public/fonts/ABCFavoritMonoEdu-Book.woff');
 }
 
+@font-face {
+  font-family: 'ABCFavoritLiningEdu';
+  src: url('../public/fonts/ABCFavoritLiningEdu-Book.woff');
+}
+
 @layer components {
   .service_heading {
     @apply lg:text-[65px] lg:leading-[78px] md:text-[56px] md:leading-[67px] text-[36px] leading-[43px] font-ITCGaramondLightCondensed tracking-tighter mr-5 open:italic hover:text-[#1A4782];
@@ -60,6 +65,10 @@ html {
 
   .mobilemenu_link {
     @apply mx-4 lg:font-ABCFavoritEdu font-ITCGaramondLightCondensed tracking-[2px];
+  }
+
+  .section_heading {
+    @apply text-sm tracking-[-0.01em] font-ABCFavoritEdu;
   }
 }
 body {

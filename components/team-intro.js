@@ -6,7 +6,7 @@ export default function TeamIntro() {
     <>
       <section id="team" className="py-10 px-4">
         <div className="container mx-auto mb-10">
-          <h3 className="text-sm ">OUR TEAM</h3>
+          <h3 className="section_heading">OUR TEAM</h3>
         </div>
         <div className="container mx-auto grid md:grid-cols-2 grid-cols-1 gap-10 items-center">
           <h2 className="font-ITCGaramondLightCondensed lg:text-[56px] lg:leading-[67px] md:text-[48px] text-[42px] leading-[45px] tracking-tighter">
