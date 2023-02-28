@@ -10,7 +10,7 @@ import mobile_close from '../public/images/mbile-icon-white.svg';
 
 function NavLink({ to, children }) {
   return (
-    <a href={to} className={`mobilemenu_link`}>
+    <a href={to} className={`top_menu_link`}>
       {children}
     </a>
   );
@@ -20,16 +20,29 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
   const [headerClr, setHeaderClr] = useState(false);
+  const [xWidth, setxWidth] = useState(0);
+  console.warn(xWidth);
 
   useEffect(() => {
     function onScroll() {
       let currentPosition = window.pageYOffset;
       setScrollTop(currentPosition <= 0 ? 0 : currentPosition);
     }
-    scrollTop >= '10' ? setHeaderClr(true) : setHeaderClr(false);
+
+    setxWidth(window.innerWidth);
+
+    xWidth <= '480'
+      ? scrollTop >= '500'
+        ? setHeaderClr(true)
+        : setHeaderClr(false)
+      : scrollTop >= '10'
+      ? setHeaderClr(true)
+      : setHeaderClr(false);
+
+    // scrollTop >= '500' ? setHeaderClr(true) : setHeaderClr(false);
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
-  }, [scrollTop]);
+  }, [scrollTop, xWidth]);
 
   return (
     <>

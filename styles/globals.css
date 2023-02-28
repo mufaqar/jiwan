@@ -63,8 +63,8 @@ html {
     @apply absolute  bg-[#1A4781] top-0 right-0 left-0 bottom-[0.3rem];
   }
 
-  .mobilemenu_link {
-    @apply mx-4 lg:font-ABCFavoritEdu font-ITCGaramondLightCondensed tracking-[2px];
+  .top_menu_link {
+    @apply mx-4 lg:font-ABCFavoritEdu font-ITCGaramondLightCondensed tracking-[2px] hover:font-ABCFavoritLiningEdu;
   }
 
   .section_heading {
