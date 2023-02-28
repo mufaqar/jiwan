@@ -6,7 +6,6 @@ import Consulting from '../public/images/consulting.webp';
 import { useState } from 'react';
 import { AiOutlinePlus } from 'react-icons/ai';
 
-
 export default function ServiceBox() {
   const [openService, setOpenService] = useState(null);
   const HandleOpen = (id) => {
@@ -45,8 +44,7 @@ export default function ServiceBox() {
                   }`}
                 ></div>
               </figure>
-              { openService != 1 && <AiOutlinePlus className='ml-3 -mt-1'/>  }
-              
+              {openService != 1 && <AiOutlinePlus className="ml-3 -mt-1" />}
             </div>
           </div>
           <div
@@ -233,7 +231,7 @@ export default function ServiceBox() {
                   }`}
                 ></div>
               </figure>
-              { openService != 2 && <AiOutlinePlus className='ml-3 -mt-1'/>  }
+              {openService != 2 && <AiOutlinePlus className="ml-3 -mt-1" />}
             </div>
           </div>
           <div className={`mt-5 ${openService === 2 ? 'block' : 'hidden'}`}>
@@ -478,7 +476,7 @@ export default function ServiceBox() {
                   }`}
                 ></div>
               </figure>
-              { openService != 3 && <AiOutlinePlus className='ml-3 -mt-1'/>  }
+              {openService != 3 && <AiOutlinePlus className="ml-3 -mt-1" />}
             </div>
           </div>
           <div
@@ -547,7 +545,7 @@ export default function ServiceBox() {
                   }`}
                 ></div>
               </figure>
-              { openService != 4 && <AiOutlinePlus className='ml-3 -mt-1'/>  }
+              {openService != 4 && <AiOutlinePlus className="ml-3 -mt-1" />}
             </div>
           </div>
           <div className={`mt-5 ${openService === 4 ? 'block' : 'hidden'}`}>
@@ -557,30 +555,26 @@ export default function ServiceBox() {
                   STRATEGY & PLANNING
                 </h3>
                 <ul className="mb-5">
-                  <li className="servic_list_title">
+                  <li className="servic_list_title2">
                     <span>Strategic and Operational Plans</span>
-
                     <span className="price">
-                      <span className="from">From </span> $5,000
+                      <span className="from">From</span> $5,000
                     </span>
                   </li>
                   <li className="servic_list_title2">
                     <span>Business plans</span>
-
                     <span className="price">
                       <span className="from">From</span> $2,500
                     </span>
                   </li>
                   <li className="servic_list_title2">
                     <span>Busines valuations</span>
-
                     <span className="price">
                       <span className="from">From</span> $2,500
                     </span>
                   </li>
                   <li className="servic_list_title2">
                     <span>Financial projections</span>
-
                     <span className="price">
                       <span className="from">From</span> $2,500
                     </span>
