@@ -28,9 +28,7 @@ export default function Navbar() {
       let currentPosition = window.pageYOffset;
       setScrollTop(currentPosition <= 0 ? 0 : currentPosition);
     }
-
     setxWidth(window.innerWidth);
-
     xWidth <= '480'
       ? scrollTop >= '500'
         ? setHeaderClr(true)
@@ -38,7 +36,6 @@ export default function Navbar() {
       : scrollTop >= '10'
       ? setHeaderClr(true)
       : setHeaderClr(false);
-
     // scrollTop >= '500' ? setHeaderClr(true) : setHeaderClr(false);
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
