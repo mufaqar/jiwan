@@ -4,6 +4,8 @@ import Accounting from '../public/images/accounting.webp';
 import Assurance from '../public/images/assurance.webp';
 import Consulting from '../public/images/consulting.webp';
 import { useState } from 'react';
+import { AiOutlinePlus } from 'react-icons/ai';
+
 
 export default function ServiceBox() {
   const [openService, setOpenService] = useState(null);
@@ -17,8 +19,8 @@ export default function ServiceBox() {
   return (
     <>
       <div className="services Textation">
-        <details className="border-y border-black md:border-transparent open:border-y  md:mb-12 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
-          <summary
+        <section className="border-y border-black md:border-transparent open:border-y  md:mb-12 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
+          <div
             className="cursor-pointer group items-center gap-4"
             onClick={() => HandleOpen(1)}
           >
@@ -43,8 +45,10 @@ export default function ServiceBox() {
                   }`}
                 ></div>
               </figure>
+              { openService != 1 && <AiOutlinePlus className='ml-3 -mt-1'/>  }
+              
             </div>
-          </summary>
+          </div>
           <div
             className={`mt-5 md:w-1/2 ${
               openService === 1 ? 'block' : 'hidden'
@@ -194,7 +198,7 @@ export default function ServiceBox() {
               your tax filings.
             </p>
           </div>
-        </details>
+        </section>
         <div
           className={`service_heading_border ${
             openService === 1 ? 'md:w-full' : 'w-0'
@@ -203,8 +207,8 @@ export default function ServiceBox() {
       </div>
 
       <div className="services Accounting">
-        <details className="border-b border-black md:border-transparent open:border-b  md:mb-12 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
-          <summary
+        <section className="border-b border-black md:border-transparent open:border-b  md:mb-12 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
+          <div
             className="cursor-pointer group items-center gap-4"
             onClick={() => HandleOpen(2)}
           >
@@ -229,8 +233,9 @@ export default function ServiceBox() {
                   }`}
                 ></div>
               </figure>
+              { openService != 2 && <AiOutlinePlus className='ml-3 -mt-1'/>  }
             </div>
-          </summary>
+          </div>
           <div className={`mt-5 ${openService === 2 ? 'block' : 'hidden'}`}>
             <div className="grid md:grid-cols-3 grid-cols-1 gap-5">
               <div>
@@ -437,7 +442,7 @@ export default function ServiceBox() {
               </div>
             </div>
           </div>
-        </details>
+        </section>
 
         <div
           className={`service_heading_border ${
@@ -447,8 +452,8 @@ export default function ServiceBox() {
       </div>
 
       <div className="services Assurance">
-        <details className="border-b border-black md:border-transparent open:border-b  md:mb-12 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
-          <summary
+        <section className="border-b border-black md:border-transparent open:border-b  md:mb-12 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
+          <div
             className="cursor-pointer group items-center gap-4"
             onClick={() => HandleOpen(3)}
           >
@@ -473,8 +478,9 @@ export default function ServiceBox() {
                   }`}
                 ></div>
               </figure>
+              { openService != 3 && <AiOutlinePlus className='ml-3 -mt-1'/>  }
             </div>
-          </summary>
+          </div>
           <div
             className={`mt-5 md:w-1/2 ${
               openService === 3 ? 'block' : 'hidden'
@@ -504,7 +510,7 @@ export default function ServiceBox() {
               starting the assurance process.
             </p>
           </div>
-        </details>
+        </section>
 
         <div
           className={`service_heading_border ${
@@ -514,8 +520,8 @@ export default function ServiceBox() {
       </div>
 
       <div className="services Consulting">
-        <details className="border-b border-black md:border-transparent open:border-b  md:mb-14 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
-          <summary
+        <section className="border-b border-black md:border-transparent open:border-b  md:mb-14 open:md:mb-5 md:px-0 px-4 open:pb-5 py-2">
+          <div
             className="cursor-pointer group items-center gap-4"
             onClick={() => HandleOpen(4)}
           >
@@ -541,8 +547,9 @@ export default function ServiceBox() {
                   }`}
                 ></div>
               </figure>
+              { openService != 4 && <AiOutlinePlus className='ml-3 -mt-1'/>  }
             </div>
-          </summary>
+          </div>
           <div className={`mt-5 ${openService === 4 ? 'block' : 'hidden'}`}>
             <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
               <div>
@@ -620,7 +627,7 @@ export default function ServiceBox() {
               </div>
             </div>
           </div>
-        </details>
+        </section>
         <div
           className={`service_heading_border ${
             openService === 4 ? 'md:w-full' : 'w-0'
