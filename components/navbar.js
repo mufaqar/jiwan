@@ -44,7 +44,7 @@ export default function Navbar() {
   return (
     <>
       <Head>
-        <title>Jiwan Dhillon & Company CPA</title>
+        <title>Jiwan Dhillons & Company CPA</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
